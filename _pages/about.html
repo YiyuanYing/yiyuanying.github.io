@@ -1,0 +1,96 @@
+---
+permalink: /
+title: "Yiyuan (Nick) YING -- About Me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+<div class="page__content">
+    <div class="btn-group">
+        <button onclick="switchLang('en')" class="btn btn--primary">English</button>
+        <button onclick="switchLang('cn')" class="btn btn--primary">中文</button>
+    </div>
+
+    <div id="content-en" style="display:block;">
+        <h2>About Me</h2>
+        <p>
+            I am currently a first-year master's student in Intelligent Manufacturing and Robotics at 
+            <a href="https://mee.sustech.edu.cn/" target="_blank">the Department of Mechanical and Energy Engineering</a>, 
+            <a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, 
+            under the supervision of 
+            <a href="http://faculty.sustech.edu.cn/?tagid=zhengyj&lang=en" target="_blank">Assoc. Prof. U Kei CHEANG</a>.
+        </p>
+        <p>
+            I received my Bachelor of Engineering degree in Mechanical Design, Manufacturing and Automation from 
+            <a href="https://mech.ecust.edu.cn/" target="_blank">the School of Mechanical and Power Engineering</a> at 
+            <a href="https://www.ecust.edu.cn/" target="_blank">East China University of Science and Technology (ECUST)</a>.
+        </p>
+    </div>
+
+    <div id="content-cn" style="display:none;">
+        <h2>关于我</h2>
+        <p>
+            我目前是<a href="https://www.sustech.edu.cn/" target="_blank">南方科技大学</a>
+            <a href="https://mee.sustech.edu.cn/" target="_blank">机械与能源工程系</a>
+            智能制造与机器人方向的一年级硕士研究生，师从
+            <a href="http://faculty.sustech.edu.cn/?tagid=zhengyj&lang=en" target="_blank">郑裕基副教授</a>。
+        </p>
+        <p>
+            我本科毕业于<a href="https://www.ecust.edu.cn/" target="_blank">华东理工大学</a>
+            <a href="https://mech.ecust.edu.cn/" target="_blank">机械与动力工程学院</a>，
+            获得机械设计制造及其自动化专业工学学士学位。
+        </p>
+    </div>
+</div>
+
+<style>
+.page__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn-group {
+    margin-bottom: 2em;
+}
+
+.btn--primary {
+    margin-right: 10px;
+    color: #fff !important;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2266aa;
+}
+</style>
+
+<script>
+function switchLang(lang) {
+    if (lang === 'en') {
+        document.getElementById('content-en').style.display = 'block';
+        document.getElementById('content-cn').style.display = 'none';
+    } else {
+        document.getElementById('content-en').style.display = 'none';
+        document.getElementById('content-cn').style.display = 'block';
+    }
+}
+</script>
