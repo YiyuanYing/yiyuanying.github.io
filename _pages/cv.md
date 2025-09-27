@@ -9,6 +9,36 @@ redirect_from:
 
 {% include base_path %}
 
+## 个人简历 | Curriculum Vitae
+
+<div class="btn-group">
+  <button onclick="showPDF('cn')" class="btn btn--primary">中文简历</button>
+  <button onclick="showPDF('en')" class="btn btn--primary">English CV</button>
+</div>
+
+[📄 下载中文简历](/files/resume_cn.pdf){: .btn .btn--primary}
+[📄 Download English CV](/files/resume_en.pdf){: .btn .btn--primary}
+
+<iframe id="cv-cn" src="/files/resume_cn.pdf" width="100%" height="800px" style="display:block;">
+如果无法显示 PDF，请点击上方链接下载
+</iframe>
+
+<iframe id="cv-en" src="/files/resume_en.pdf" width="100%" height="800px" style="display:none;">
+If PDF cannot be displayed, please click the download link above
+</iframe>
+
+<script>
+function showPDF(lang) {
+    if (lang === 'cn') {
+        document.getElementById('cv-cn').style.display = 'block';
+        document.getElementById('cv-en').style.display = 'none';
+    } else {
+        document.getElementById('cv-cn').style.display = 'none';
+        document.getElementById('cv-en').style.display = 'block';
+    }
+}
+</script>
+
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
