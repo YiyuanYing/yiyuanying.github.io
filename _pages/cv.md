@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "个人简历 | Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -16,14 +16,14 @@ redirect_from:
   <button onclick="showPDF('en')" class="btn btn--primary">English CV</button>
 </div>
 
-[📄 下载中文简历](/files/resume_cn.pdf){: .btn .btn--primary}
-[📄 Download English CV](/files/resume_en.pdf){: .btn .btn--primary}
+[📄 下载中文简历](https://raw.githubusercontent.com/YiyuanYing/MyResume/main/resume_cn.pdf){: .btn .btn--primary}
+[📄 Download English CV](https://raw.githubusercontent.com/YiyuanYing/MyResume/main/resume_en.pdf){: .btn .btn--primary}
 
-<iframe id="cv-cn" src="/files/resume_cn.pdf" width="100%" height="800px" style="display:block;">
+<iframe id="cv-cn" src="https://raw.githubusercontent.com/YiyuanYing/MyResume/main/resume_cn.pdf" width="100%" height="1200px" style="display:block;">
 如果无法显示 PDF，请点击上方链接下载
 </iframe>
 
-<iframe id="cv-en" src="/files/resume_en.pdf" width="100%" height="800px" style="display:none;">
+<iframe id="cv-en" src="https://raw.githubusercontent.com/YiyuanYing/MyResume/main/resume_en.pdf" width="100%" height="1200px" style="display:none;">
 If PDF cannot be displayed, please click the download link above
 </iframe>
 
@@ -38,7 +38,7 @@ function showPDF(lang) {
     }
 }
 </script>
-
+<!-- 
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
@@ -91,4 +91,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
