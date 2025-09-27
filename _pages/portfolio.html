@@ -21,8 +21,9 @@ author_profile: true
       <p class="project-excerpt">
         As Vice-Captain and Technical Lead of ECUST ROBOCON Team, led the team to multiple national awards in China University Robot Competition (ROBOCON).
       </p>
-      <div class="project-image">
-        <img src="/images/500x300.png" alt="ROBOCON Project">
+      <div class="project-images">
+        <img src="/images/robocon/robocon-2.jpg" alt="Team photo for the 2023-2024 season" class="preview-image">
+        <img src="/images/robocon/robocon-4.jpg" alt="Team photo for the 2024-2025 season" class="preview-image">
       </div>
     </div>
   </div>
@@ -37,8 +38,9 @@ author_profile: true
       <p class="project-excerpt">
         作为华东理工大学 ROBOCON 机器人战队的副队长和技术负责人，带领团队在全国大学生机器人大赛中获得多项国家级奖项。
       </p>
-      <div class="project-image">
-        <img src="/images/500x300.png" alt="ROBOCON 项目">
+      <div class="project-images">
+        <img src="/images/robocon/robocon-2.jpg" alt="2023-2024赛季队员合影" class="preview-image">
+        <img src="/images/robocon/robocon-4.jpg" alt="2024-2025赛季队员合影" class="preview-image">
       </div>
     </div>
   </div>
@@ -94,6 +96,31 @@ author_profile: true
 
 .btn--primary {
   margin-right: 10px;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.preview-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.preview-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
