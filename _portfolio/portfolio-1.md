@@ -9,7 +9,7 @@ collection: portfolio
   <button onclick="switchLang('cn')" class="btn btn--primary">中文</button>
 </div>
 
-<div id="content-en" style="display:block;">
+<div id="content-en" style="display:block;" markdown="1">
 
 ## Project Overview
 
@@ -42,7 +42,7 @@ As Vice-Captain, Mechanical Group Leader, and Technical Advisor of ECUST ROBOCON
 
 </div>
 
-<div id="content-cn" style="display:none;">
+<div id="content-cn" style="display:none;" markdown="1">
 
 ## 项目概述
 
