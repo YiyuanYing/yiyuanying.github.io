@@ -16,33 +16,16 @@ redirect_from:
   <button onclick="showPDF('en')" class="btn btn--primary">English CV</button>
 </div>
 
-[📄 下载中文简历](https://docs.google.com/viewer?url=https://yiyuanying.github.io/MyResume/resume_cn.pdf){: .btn .btn--primary}
-[📄 Download English CV](https://docs.google.com/viewer?url=https://yiyuanying.github.io/MyResume/resume_en.pdf){: .btn .btn--primary}
+[📄 下载中文简历](https://yiyuanying.github.io/MyResume/resume_cn.pdf){: .btn .btn--primary}
+[📄 Download English CV](https://yiyuanying.github.io/MyResume/resume_en.pdf){: .btn .btn--primary}
 
-<div class="pdf-container">
-  <iframe id="cv-cn" 
-    src="https://docs.google.com/viewer?url=https://yiyuanying.github.io/MyResume/resume_cn.pdf&embedded=true" 
-    width="100%" 
-    height="800px" 
-    style="display:block; border: none;">
-  </iframe>
+<iframe id="cv-cn" src="https://yiyuanying.github.io/MyResume/resume_cn.pdf" width="100%" height="1200px" style="display:block;">
+如果无法显示 PDF，请点击上方链接下载
+</iframe>
 
-  <iframe id="cv-en" 
-    src="https://docs.google.com/viewer?url=https://yiyuanying.github.io/MyResume/resume_en.pdf&embedded=true" 
-    width="100%" 
-    height="800px" 
-    style="display:none; border: none;">
-  </iframe>
-</div>
-
-<style>
-.pdf-container {
-    margin: 20px 0;
-    padding: 10px;
-    background: #f5f5f5;
-    border-radius: 5px;
-}
-</style>
+<iframe id="cv-en" src="https://yiyuanying.github.io/MyResume/resume_en.pdf" width="100%" height="1200px" style="display:none;">
+If PDF cannot be displayed, please click the download link above
+</iframe>
 
 <script>
 function showPDF(lang) {
