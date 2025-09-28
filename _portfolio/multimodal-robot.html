@@ -65,7 +65,7 @@ permalink: /portfolio/multimodal-robot/
     </div>
 
 
-    <div data-lang="cn" style="display:none; width: 100%;"> {# Changed display to none and added width: 100% #}
+    <div data-lang="cn" style="display:none; width: 100%;"> 
         <h2>项目概述</h2>
         <h3>导师：易建军教授 | 上海霄元创新中心合作项目</h3>
         <h3>时间：2024.09-2025.06</h3>
@@ -120,17 +120,12 @@ permalink: /portfolio/multimodal-robot/
 </div>
 
 <h2 style="margin-top: 2em;">项目海报 | Project Poster</h2>
-<div class="btn-group" style="margin-bottom: 1em;">
-    <button onclick="showPosterPDF()" class="btn btn--primary">查看海报 | View Poster</button>
-</div>
 
-<div id="poster-container" style="display:none;">
-    <iframe id="poster-pdf" src="/files/multimodal-robot-poster.pdf" width="100%" height="1200px" style="border: 1px solid #ddd; border-radius: 5px;">
-        如果无法显示 PDF，请点击下方链接下载
-    </iframe>
-    <div style="text-align: center; margin-top: 1em;">
-        <a href="/files/multimodal-robot-poster.pdf" target="_blank" class="btn btn--primary">📄 下载海报 | Download Poster</a>
-    </div>
+<iframe id="poster-pdf" src="/files/multimodal-robot-poster.pdf" width="100%" height="100%" style="border: 1px solid #ddd; border-radius: 5px;">
+    如果无法显示 PDF，请点击下方链接下载
+</iframe>
+<div style="text-align: center; margin-top: 1em;">
+    <a href="/files/multimodal-robot-poster.pdf" target="_blank" class="btn btn--primary">📄 下载海报 | Download Poster</a>
 </div>
 
 <style>
@@ -258,20 +253,6 @@ function switchLang(lang) {
         
         document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'none');
         document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'block');
-    }
-}
-
-// PDF预览功能
-function showPosterPDF() {
-    const container = document.getElementById('poster-container');
-    const button = event.target;
-    
-    if (container.style.display === 'none') {
-        container.style.display = 'block';
-        button.textContent = '隐藏海报 | Hide Poster';
-    } else {
-        container.style.display = 'none';
-        button.textContent = '查看海报 | View Poster';
     }
 }
 
