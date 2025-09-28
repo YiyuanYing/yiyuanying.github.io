@@ -8,6 +8,11 @@ redirect_from:
 ---
 
 <div class="page__content">
+    <div class="btn-group">
+        <button onclick="switchLang('en')" class="btn btn--primary">English</button>
+        <button onclick="switchLang('cn')" class="btn btn--primary">中文</button>
+    </div>
+
     <div data-lang="en">
         <h2>About Me</h2>
         <p>
@@ -48,12 +53,23 @@ redirect_from:
 }
 
 .btn-group {
+    text-align: right;
     margin-bottom: 2em;
 }
 
 .btn--primary {
-    margin-right: 10px;
-    color: #fff !important;
+    padding: 0.5em 1em;
+    margin: 0 0.25em;
+    background-color: #2266aa;
+    border: none;
+    border-radius: 3px;
+    color: white !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn--primary:hover {
+    background-color: #1a4c80;
 }
 
 h2 {
@@ -87,5 +103,19 @@ function switchLang(lang) {
         document.querySelector('[data-lang="en"]').style.display = 'none';
         document.querySelector('[data-lang="cn"]').style.display = 'block';
     }
+    
+    // 更新按钮状态
+    document.querySelectorAll('.btn--primary').forEach(button => {
+        if (button.textContent.toLowerCase().includes(lang)) {
+            button.style.backgroundColor = '#1a4c80';
+        } else {
+            button.style.backgroundColor = '#2266aa';
+        }
+    });
 }
+
+// 页面加载时设置默认语言
+document.addEventListener('DOMContentLoaded', function() {
+    switchLang('en');
+});
 </script>
