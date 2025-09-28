@@ -128,8 +128,6 @@ permalink: /portfolio/multimodal-robot/
 <style>
 .page__content {
     max-width: 1200px !important;
-    padding-right: 100px !important;
-    padding-left: 100px !important;
     margin: 0 auto;
 }
 
@@ -231,19 +229,7 @@ strong {
     font-style: italic;
 }
 
-@media (max-width: 1200px) {
-    .page__content {
-        padding-right: 50px !important;
-        padding-left: 50px !important;
-    }
-}
-
 @media (max-width: 768px) {
-    .page__content {
-        padding-right: 20px !important;
-        padding-left: 20px !important;
-        grid-template-columns: 1fr; /* 移动端单列显示 */
-    }
     .image-gallery {
         grid-template-columns: 1fr;
     }
@@ -267,6 +253,7 @@ function switchLang(lang) {
     }
 }
 
+// 页面加载完成后设置默认语言
 document.addEventListener('DOMContentLoaded', function() {
     switchLang('en'); // 默认显示英文
 });
