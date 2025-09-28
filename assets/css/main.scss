@@ -39,3 +39,12 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.lang-switch {
+    margin-left: 1em;
+}
+
+.lang-switch .btn--primary {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+}
