@@ -11,20 +11,59 @@ permalink: /portfolio/multimodal-robot/
 </div>
 
 <div class="page__content">
-    <div data-lang="en" style="display:block; width: 100%;"> {# Added width: 100% #}
-        <h2>Research Project Overview</h2>
-        <h3>Supervisor: Prof. Jianjun YI, Collaborate with Shanghai Xiaoyuan Innovation Center</h3>
-        <h3>Duration: Sept. 2024 -- June 2025</h3>
-        <p>
-            This research focuses on developing advanced perception and interaction systems for multimodal robots, particularly for autonomous locomotion in complex environments like satellite surfaces.
-        </p>
+    <div data-lang="en" style="display:block; width: 100%;"> 
+        <h2>Project Overview</h2>
+        <h3>Supervisor: Professor Yi Jianjun | Collaborative Project with Shanghai Xiaoyuan Innovation Center</h3>
+        <h3>Duration: September 2024 - June 2025</h3>
+        
+        <h2>Project Background</h2>
+        <p>Multi-legged robots in aerospace missions, serving as "parasitic" intelligent agents of spacecraft, need to possess the capability of <strong>autonomous perception and decision-making</strong> in unknown environments after planetary surface landing, to construct a <strong>mission-oriented intelligent closed-loop system</strong>.</p>
+        <p>To achieve this goal, robot technology needs to meet the following requirements: First, establish a complete <strong>"perception-decision-planning-control"</strong> architecture that enables independent processing from environmental perception to final action; Second, possess <strong>multi-modal motion switching capabilities</strong> to adapt to different mission requirements and planetary surface environments; Finally, effectively adapt to and cope with <strong>complex and varied planetary surface terrain configurations</strong>, ensuring stable and reliable task execution under various harsh conditions.</p>
+        
+        <h2>Research Architecture</h2>
+        <h3>Multi-modal Humanoid Motion Perception and Interaction System</h3>
         <ul>
-            <li>Designed a 6-DOF, multimodal leg structure to meet the autonomous locomotion demands of multi-legged robots in complex satellite surface environments.</li>
-            <li>Developed a virtual simulation and training environment using NVIDIA Isaac Sim and Isaac Lab, and constructed a physical testbed equipped with a suspension system and motion capture positioning system.</li>
-            <li>Designed a hybrid control framework that integrates imitation and reinforcement learning, featuring a teacher-student policy structure based on PPO and SAC algorithms.</li>
-            <li>Successfully trained the robot, through reinforcement learning, to acquire stable and efficient autonomous crawling gaits in the simulated environment, thereby validating the control strategy's effectiveness.</li>
+            <li>Multi-legged robot architecture design</li>
+            <li>Humanoid motion testing platform</li>
+            <li>Reinforcement learning serial control methods</li>
         </ul>
+        <p>This paper proposes a humanoid multi-legged robot control architecture: First, utilizing the multi-functional simulator Isaac Sim to build a humanoid motion testing platform, achieving interaction between simulation and real environments; Then, using multi-legged serial control methods and reinforcement learning to achieve robot teleoperation control; Finally, training and validating robot motion control algorithms.</p>
+        
+        <!-- Image placeholder 1 -->
+        <div style="text-align: center; margin: 1em 0;">
+            <img src="/images/multimodal-robot/multimodal-2.jpg" alt="Schematic Diagram of Research Architecture" style="width:100%; height:auto; max-width: 800px;">
+            <p class="caption-cn" style="display:none;">研究架构示意图</p>
+            <p class="caption-en" style="display:block;">Schematic Diagram of Research Architecture</p>
+        </div>
+            
+        <h2>Robot Intelligent Control Algorithm Design</h2>
+        <h3>Comprehensive Reinforcement Learning Intelligent Algorithm Design</h3>
+        <p>Adopts a "Teacher-Student" training paradigm:</p>
+        <p><b>Teacher Policy:</b> Constructs high-quality, smooth, and robust motion trajectories by collecting demonstration data in noise-free environments; Uses demonstration data to guide student policy training.</p>
+        <p><b>Student Policy:</b> Improves student generalization and adaptability by aligning with teacher trajectories and combining actual noisy environment observations, while being able to adapt to complex environments.</p>
+        
+        <!-- Image placeholder 2 -->
+        <div style="text-align: center; margin: 1em 0;">
+            <img src="images/multimodal-robot/multimodal-1.jpg" alt="Algorithm Diagram" style="width:100%; height:auto; max-width: 800px;">
+            <p class="caption-cn" style="display:none;">算法框架图</p>
+            <p class="caption-en" style="display:block;">Algorithm Diagram</p>
+        </div>
+        
+        <h3>Research Summary</h3>
+        <ol>
+            <li>The research summarized multi-legged robot motion control technology under environmental perception and designed a reinforcement learning architecture that integrates six-degree-of-freedom robotic arms with multi-legged control systems.</li>
+            <li>The research summarized the comparison between NVIDIA Isaac Sim simulation environment and experimental data in real environments, and combined NVIDIA Isaac Lab to build, conduct transmission, training, and Sim-to-Real transfer.</li>
+            <li>The research summarized a control framework that fuses imitation learning and reinforcement learning, based on PPO and SAC algorithms, achieving stable gait and efficient motion control through "Teacher-Student" strategy and multi-legged strategy training.</li>
+        </ol>
+
+        <h3>Future Research</h3>
+        <ol>
+            <li>Future research needs to continue studying multi-legged robot perception and decision-making technology with environmental interaction, and integrate it with reinforcement learning systems to address future complex tasks.</li>
+            <li>Future research will continue to deeply investigate multi-legged robot remote operation control technology, exploring more precise and efficient remote operation methods to address future complex tasks.</li>
+            <li>Future research will explore multi-legged robot motion control and planning under complex planetary surface terrain, and integrate it with multi-modal motion systems to address future complex tasks.</li>
+        </ol>
     </div>
+
 
     <div data-lang="cn" style="display:none; width: 100%;"> {# Changed display to none and added width: 100% #}
         <h2>项目概述</h2>
@@ -46,7 +85,7 @@ permalink: /portfolio/multimodal-robot/
         
         <!-- 图片占位符 1 -->
         <div style="text-align: center; margin: 1em 0;">
-            <img src="/images/500x300.png" alt="研究架构示意图" style="width:100%; height:auto; max-width: 800px;">
+            <img src="/images/multimodal-robot/multimodal-2.jpg" alt="研究架构示意图" style="width:100%; height:auto; max-width: 800px;">
             <p class="caption-cn" style="display:none;">研究架构示意图</p>
             <p class="caption-en" style="display:block;">Schematic Diagram of Research Architecture</p>
         </div>
@@ -57,32 +96,11 @@ permalink: /portfolio/multimodal-robot/
         <p><b>教师策略：</b>通过在无噪声环境中采集示教数据，构建高质量、平滑、鲁棒的运动轨迹；利用示教数据，用于指导学生策略训练。</p>
         <p><b>学生策略：</b>通过与教师轨迹进行对齐并结合实际噪声环境观测，提升学生的泛化性和适应性，同时能够适应复杂环境。</p>
         
-        <h2>强化学习串行控制方法</h2>
-        <p>提出了一种融合模仿学习与强化学习的组合方法，使其能够有效利用模仿学习经验，从而加快机器人自主学习的进程，同时能够实现多足运动控制的泛化能力。</p>
-        
-        <h4>总奖励函数</h4>
-        $$ R_{total} = R_{foot\_contact} + R_{foot\_swing} + R_{stability} + R_{T\_V\_limitation} + R_{T\_T\_limitation} + R_{T\_T\_orientation} + R_{gravity} + R_{joint\_pos\_limitation} + R_{joint\_vel\_limitation} + R_{joint\_acc\_limitation} $$
-        
-        <h4>足端稳定奖励</h4>
-        $$ R_{foot\_contact} = - \sum_i |p_i - p_{i\_ideal}| + \beta_1 \sum_i |a_i - a_{i\_ideal}| + \beta_2 \sum_i |v_i - v_{i\_ideal}| $$
-        
-        <h4>全身姿态保持奖励</h4>
-        $$ R_{T\_T\_orientation} = - k \sum_i |q_i - q_{i\_ideal}| + \beta_3 \sum_i |\omega_i - \omega_{i\_ideal}| $$
-        
-        <h4>重心稳定奖励</h4>
-        $$ R_{gravity} = - k \sum_i |z_i - z_{i\_ideal}| $$
-        
-        <h4>碰撞奖励</h4>
-        $$ R_{T\_T\_limitation} = - k \sum_i |d_i - d_{i\_ideal}| $$
-        
-        <h4>关节位置、速度、加速度限制奖励</h4>
-        $$ R_{joint\_pos\_limitation} = - k \sum_i |q_i - q_{i\_limit}| $$
-
         <!-- 图片占位符 2 -->
         <div style="text-align: center; margin: 1em 0;">
-            <img src="/images/500x300.png" alt="强化学习奖励函数示意图" style="width:100%; height:auto; max-width: 800px;">
-            <p class="caption-cn" style="display:none;">强化学习奖励函数示意图</p>
-            <p class="caption-en" style="display:block;">Schematic Diagram of Reinforcement Learning Reward Function</p>
+            <img src="images/multimodal-robot/multimodal-1.jpg" alt="算法框架图" style="width:100%; height:auto; max-width: 800px;">
+            <p class="caption-cn" style="display:none;">算法框架图</p>
+            <p class="caption-en" style="display:block;">Algorithm Diagram</p>
         </div>
         
         <h3>研究总结</h3>
@@ -99,29 +117,19 @@ permalink: /portfolio/multimodal-robot/
             <li>后续研究将探索多足机器人在复杂星表地形下的运动控制与规划，并将其与多模态运动系统相结合，以应对未来的复杂任务。</li>
         </ol>
     </div>
+</div>
 
-    <h2 style="margin-top: 2em;">项目图片 | Project Gallery</h2>
-    <div class="image-gallery">
-        <div class="gallery-item">
-            <img src="/images/500x300.png" alt="Multimodal Leg Structure">
-            <p class="caption-en" style="display:block;">6-DOF Multimodal Leg Structure Design</p>
-            <p class="caption-cn" style="display:none;">六自由度多模态腿部结构设计</p>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/500x300.png" alt="Isaac Sim Environment">
-            <p class="caption-en" style="display:block;">NVIDIA Isaac Sim Virtual Environment</p>
-            <p class="caption-cn" style="display:none;">NVIDIA Isaac Sim 虚拟环境</p>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/500x300.png" alt="Physical Testbed">
-            <p class="caption-en" style="display:block;">Physical Testbed with Suspension System</p>
-            <p class="caption-cn" style="display:none;">带吊挂系统的物理测试平台</p>
-        </div>
-        <div class="gallery-item">
-            <img src="/images/500x300.png" alt="Crawling Gaits">
-            <p class="caption-en" style="display:block;">Reinforcement Learning for Crawling Gaits</p>
-            <p class="caption-cn" style="display:none;">强化学习自主爬行步态</p>
-        </div>
+<h2 style="margin-top: 2em;">项目海报 | Project Poster</h2>
+<div class="btn-group" style="margin-bottom: 1em;">
+    <button onclick="showPosterPDF()" class="btn btn--primary">查看海报 | View Poster</button>
+</div>
+
+<div id="poster-container" style="display:none;">
+    <iframe id="poster-pdf" src="/files/multimodal-robot-poster.pdf" width="100%" height="1200px" style="border: 1px solid #ddd; border-radius: 5px;">
+        如果无法显示 PDF，请点击下方链接下载
+    </iframe>
+    <div style="text-align: center; margin-top: 1em;">
+        <a href="/files/multimodal-robot-poster.pdf" target="_blank" class="btn btn--primary">📄 下载海报 | Download Poster</a>
     </div>
 </div>
 
@@ -250,6 +258,20 @@ function switchLang(lang) {
         
         document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'none');
         document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'block');
+    }
+}
+
+// PDF预览功能
+function showPosterPDF() {
+    const container = document.getElementById('poster-container');
+    const button = event.target;
+    
+    if (container.style.display === 'none') {
+        container.style.display = 'block';
+        button.textContent = '隐藏海报 | Hide Poster';
+    } else {
+        container.style.display = 'none';
+        button.textContent = '查看海报 | View Poster';
     }
 }
 
