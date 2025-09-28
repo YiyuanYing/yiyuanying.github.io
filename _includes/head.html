@@ -20,3 +20,41 @@
 <script src="{{ '/assets/js/lang-switch.js' | relative_url }}"></script>
 
 <meta http-equiv="cleartype" content="on">
+
+<!-- MathJax for LaTeX rendering -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    // Center equations by default, if you want to left align, use align: "left"
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["TeX"],
+      linebreaks: { automatic: true },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    TeX: {
+      Macros: {
+        R_total: "R_{\\text{total}}",
+        R_foot_contact: "R_{\\text{foot\\_contact}}",
+        R_foot_swing: "R_{\\text{foot\\_swing}}",
+        R_stability: "R_{\\text{stability}}",
+        R_T_V_limitation: "R_{\\text{T\\_V\\_limitation}}",
+        R_T_T_limitation: "R_{\\text{T\\_T\\_limitation}}",
+        R_T_T_orientation: "R_{\\text{T\\_T\\_orientation}}",
+        R_gravity: "R_{\\text{gravity}}",
+        R_joint_pos_limitation: "R_{\\text{joint\\_pos\\_limitation}}",
+        R_joint_vel_limitation: "R_{\\text{joint\\_vel\\_limitation}}",
+        R_joint_acc_limitation: "R_{\\text{joint\\_acc\\_limitation}}"
+      },
+      equationNumbers: { autoNumber: "AMS" },
+      TagSide: "right",
+      TagIndent: ".8em"
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>

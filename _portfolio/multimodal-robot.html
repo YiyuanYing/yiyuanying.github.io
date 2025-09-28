@@ -1,0 +1,273 @@
+---
+title: "Research on Multimodal Robot Perception and Interaction Systems · 多模态机器人感知与交互系统的研究"
+excerpt: "Designed a 6-DOF multimodal leg structure and developed a hybrid control framework for autonomous locomotion in complex environments.<br/><img src='/images/500x300.png'>"
+collection: portfolio
+permalink: /portfolio/multimodal-robot/
+---
+
+<div class="btn-group" style="margin-bottom: 2em;">
+    <button onclick="switchLang('en')" class="btn btn--primary">English</button>
+    <button onclick="switchLang('cn')" class="btn btn--primary">中文</button>
+</div>
+
+<div class="page__content">
+    <div data-lang="en" style="display:block;">
+        <h2>Research Project Overview</h2>
+        <h3>Supervisor: Prof. Jianjun YI, Collaborate with Shanghai Xiaoyuan Innovation Center</h3>
+        <h3>Duration: Sept. 2024 -- June 2025</h3>
+        <p>
+            This research focuses on developing advanced perception and interaction systems for multimodal robots, particularly for autonomous locomotion in complex environments like satellite surfaces.
+        </p>
+        <ul>
+            <li>Designed a 6-DOF, multimodal leg structure to meet the autonomous locomotion demands of multi-legged robots in complex satellite surface environments.</li>
+            <li>Developed a virtual simulation and training environment using NVIDIA Isaac Sim and Isaac Lab, and constructed a physical testbed equipped with a suspension system and motion capture positioning system.</li>
+            <li>Designed a hybrid control framework that integrates imitation and reinforcement learning, featuring a teacher-student policy structure based on PPO and SAC algorithms.</li>
+            <li>Successfully trained the robot, through reinforcement learning, to acquire stable and efficient autonomous crawling gaits in the simulated environment, thereby validating the control strategy's effectiveness.</li>
+        </ul>
+    </div>
+
+    <div data-lang="cn" style="display:none;">
+        <h2>项目概述</h2>
+        <h3>导师：易建军教授 | 上海霄元创新中心合作项目</h3>
+        <h3>时间：2024.09-2025.06</h3>
+        
+        <h2>项目背景</h2>
+        <p>航天任务中的多足机器人，作为航天器的“寄附式”智能体，在星表着陆后需具备在未知环境中进行<strong>自主感知与决策</strong>的能力，以构建一个<strong>任务导向的智能闭环系统</strong>。</p>
+        <p>为了实现这一目标，机器人技术需要满足以下要求：首先，建立一个完整的<strong>“感知—决策—规划—控制”</strong>架构，使其能够独立处理从环境感知到最终行动的全过程；其次，具备<strong>多模态运动切换能力</strong>，以适应不同任务需求和星表环境；最后，能够有效适应并应对<strong>复杂多变的星表地形构型</strong>，确保其在各种严苛条件下都能稳定可靠地执行任务。</p>
+        
+        <h2>研究架构</h2>
+        <h3>基于多模态的仿人运动感知与交互系统</h3>
+        <ul>
+            <li>多足机器人架构设计</li>
+            <li>仿人运动测试平台</li>
+            <li>强化学习串行控制方法</li>
+        </ul>
+        <p>本文提出了仿人多足机器人控制架构：首先，利用多功能仿真器 Isaac Sim 搭建仿人运动测试平台，实现仿真与真实环境交互；然后，利用多足串行控制方法与强化学习，实现机器人遥操作控制；最后，对机器人运动控制算法进行训练与验证。</p>
+        
+        <!-- 图片占位符 1 -->
+        <div style="text-align: center; margin: 1em 0;">
+            <img src="/images/500x300.png" alt="研究架构示意图" style="width:100%; height:auto; max-width: 800px;">
+            <p class="caption-cn" style="display:none;">研究架构示意图</p>
+            <p class="caption-en" style="display:block;">Schematic Diagram of Research Architecture</p>
+        </div>
+        
+        <h2>机器人智能控制算法设计</h2>
+        <h3>综合强化学习智能算法设计</h3>
+        <p>采用“教师-学生”训练模式：</p>
+        <p><b>教师策略：</b>通过在无噪声环境中采集示教数据，构建高质量、平滑、鲁棒的运动轨迹；利用示教数据，用于指导学生策略训练。</p>
+        <p><b>学生策略：</b>通过与教师轨迹进行对齐并结合实际噪声环境观测，提升学生的泛化性和适应性，同时能够适应复杂环境。</p>
+        
+        <h2>强化学习串行控制方法</h2>
+        <p>提出了一种融合模仿学习与强化学习的组合方法，使其能够有效利用模仿学习经验，从而加快机器人自主学习的进程，同时能够实现多足运动控制的泛化能力。</p>
+        
+        <h4>总奖励函数</h4>
+        $$ R_{total} = R_{foot\_contact} + R_{foot\_swing} + R_{stability} + R_{T\_V\_limitation} + R_{T\_T\_limitation} + R_{T\_T\_orientation} + R_{gravity} + R_{joint\_pos\_limitation} + R_{joint\_vel\_limitation} + R_{joint\_acc\_limitation} $$
+        
+        <h4>足端稳定奖励</h4>
+        $$ R_{foot\_contact} = - \sum_i |p_i - p_{i\_ideal}| + \beta_1 \sum_i |a_i - a_{i\_ideal}| + \beta_2 \sum_i |v_i - v_{i\_ideal}| $$
+        
+        <h4>全身姿态保持奖励</h4>
+        $$ R_{T\_T\_orientation} = - k \sum_i |q_i - q_{i\_ideal}| + \beta_3 \sum_i |\omega_i - \omega_{i\_ideal}| $$
+        
+        <h4>重心稳定奖励</h4>
+        $$ R_{gravity} = - k \sum_i |z_i - z_{i\_ideal}| $$
+        
+        <h4>碰撞奖励</h4>
+        $$ R_{T\_T\_limitation} = - k \sum_i |d_i - d_{i\_ideal}| $$
+        
+        <h4>关节位置、速度、加速度限制奖励</h4>
+        $$ R_{joint\_pos\_limitation} = - k \sum_i |q_i - q_{i\_limit}| $$
+
+        <!-- 图片占位符 2 -->
+        <div style="text-align: center; margin: 1em 0;">
+            <img src="/images/500x300.png" alt="强化学习奖励函数示意图" style="width:100%; height:auto; max-width: 800px;">
+            <p class="caption-cn" style="display:none;">强化学习奖励函数示意图</p>
+            <p class="caption-en" style="display:block;">Schematic Diagram of Reinforcement Learning Reward Function</p>
+        </div>
+        
+        <h3>研究总结</h3>
+        <ol>
+            <li>研究总结了环境感知下的多足机器人运动控制技术，设计了融合六自由度机械臂与多足控制系统的强化学习架构。</li>
+            <li>研究总结了 NVIDIA Isaac Sim 仿真环境与实验数据真实环境对比，并结合 NVIDIA Isaac Lab 搭建并进行传输与训练以及SimReal迁移。</li>
+            <li>研究总结了一种融合模仿学习与强化学习的控制框架，基于PPO与SAC算法，通过“教师-学生”策略与多足策略进行训练，实现了稳定步态与高效运动控制。</li>
+        </ol>
+
+        <h3>后续研究</h3>
+        <ol>
+            <li>后续研究需要继续研究多足机器人与环境的感知与决策技术，并将其与强化学习系统相结合，以应对未来的复杂任务。</li>
+            <li>后续研究将继续深入研究多足机器人远程操作控制技术，探索更精确、更高效的远程操作方式，以应对未来的复杂任务。</li>
+            <li>后续研究将探索多足机器人在复杂星表地形下的运动控制与规划，并将其与多模态运动系统相结合，以应对未来的复杂任务。</li>
+        </ol>
+    </div>
+
+    <h2 style="margin-top: 2em;">项目图片 | Project Gallery</h2>
+    <div class="image-gallery">
+        <div class="gallery-item">
+            <img src="/images/500x300.png" alt="Multimodal Leg Structure">
+            <p class="caption-en" style="display:block;">6-DOF Multimodal Leg Structure Design</p>
+            <p class="caption-cn" style="display:none;">六自由度多模态腿部结构设计</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/500x300.png" alt="Isaac Sim Environment">
+            <p class="caption-en" style="display:block;">NVIDIA Isaac Sim Virtual Environment</p>
+            <p class="caption-cn" style="display:none;">NVIDIA Isaac Sim 虚拟环境</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/500x300.png" alt="Physical Testbed">
+            <p class="caption-en" style="display:block;">Physical Testbed with Suspension System</p>
+            <p class="caption-cn" style="display:none;">带吊挂系统的物理测试平台</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/500x300.png" alt="Crawling Gaits">
+            <p class="caption-en" style="display:block;">Reinforcement Learning for Crawling Gaits</p>
+            <p class="caption-cn" style="display:none;">强化学习自主爬行步态</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.page__content {
+    max-width: 1200px !important;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+    margin: 0 auto;
+}
+
+.btn-group {
+    margin-bottom: 2em;
+}
+
+.btn--primary {
+    margin-right: 10px;
+    padding: 0.5em 1em;
+    background-color: #2266aa;
+    border: none;
+    border-radius: 3px;
+    color: white !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn--primary:hover {
+    background-color: #1a4c80;
+}
+
+h2 {
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: #444;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h4 { /* Added style for h4 */
+    color: #555;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+ul, ol { /* Added ol to list styles */
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2266aa;
+}
+
+strong {
+    color: #333;
+    font-weight: 700;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 2em auto;
+    max-width: 1200px; /* 与页面宽度一致 */
+}
+
+.gallery-item {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; /* 保持图片比例 */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item p {
+    margin: 5px 0;
+    color: #666;
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    .page__content {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page__content {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        grid-template-columns: 1fr; /* 移动端单列显示 */
+    }
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+function switchLang(lang) {
+    if (lang === 'en') {
+        document.querySelector('[data-lang="en"]').style.display = 'block';
+        document.querySelector('[data-lang="cn"]').style.display = 'none';
+        
+        document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'none');
+    } else {
+        document.querySelector('[data-lang="en"]').style.display = 'none';
+        document.querySelector('[data-lang="cn"]').style.display = 'block';
+        
+        document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'block');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchLang('en'); // 默认显示英文
+});
+</script>

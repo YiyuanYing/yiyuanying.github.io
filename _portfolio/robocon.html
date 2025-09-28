@@ -1,6 +1,6 @@
 ---
 title: "ECUST ROBOCON Team \"WUER\" · 华东理工大学 ROBOCON \"无贰\"战队"
-excerpt: "Vice-Captain & Mechanical Lead of ECUST ROBOCON Team, leading the team to multiple national awards<br/><img src='/images/500x300.png'>"
+excerpt: "Vice-Captain & Mechanical Lead of ECUST ROBOCON Team, leading the team to multiple national awards"
 collection: portfolio
 permalink: /portfolio/robocon/
 ---
@@ -179,9 +179,17 @@ function switchLang(lang) {
     if (lang === 'en') {
         document.querySelector('[data-lang="en"]').style.display = 'block';
         document.querySelector('[data-lang="cn"]').style.display = 'none';
+        
+        // 切换英文图注显示
+        document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'none');
     } else {
         document.querySelector('[data-lang="en"]').style.display = 'none';
         document.querySelector('[data-lang="cn"]').style.display = 'block';
+        
+        // 切换中文图注显示
+        document.querySelectorAll('.caption-en').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.caption-cn').forEach(el => el.style.display = 'block');
     }
 }
 </script>
