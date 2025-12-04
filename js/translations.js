@@ -23,14 +23,20 @@ const translations = {
         "project_1_title": "ROBOCON2025-Robot Basketball",
         "project_1_desc": "As the technical consultant for the ECUST 'Wu Er' team, designed the steering wheel structure and shooting mechanism for the competition robot.",
         "project_1_detail": `
-            <p>As the technical consultant for the ECUST 'Wu Er' team, I was responsible for the mechanical design of the competition robot.</p>
+            <p>The theme of the 2025 ROBOCON competition is "Robot Basketball", requiring participating teams to design robots capable of completing dribbling and shooting tasks within a specified time.</p>
+            <p>As the technical consultant for the ECUST "Wu Er" team, I was primarily responsible for the mechanical structure design and guidance of the competition robots.</p>
             <p>Key contributions include:</p>
             <ul>
-                <li>Designed a high-performance steering wheel structure to ensure agile movement.</li>
-                <li>Developed a precise shooting mechanism to improve scoring efficiency.</li>
-                <li>Collaborated with the control team to optimize the robot's motion algorithms.</li>
+                <li><strong>Steering Wheel Modules:</strong> Iteratively designed two sets of steering wheel solutions during the preparation cycle.
+                    <ul>
+                        <li><strong>Solution 1:</strong> Adopted DM6220 hollow cup motors for direct drive steering, combined with DJI M3508 motors with custom gearboxes to drive the wheel hubs. Cross-roller bearings were added to the steering motors to improve axial load capacity. Compared to the mecanum wheel chassis used in the previous two years, this solution offered higher response speed and movement velocity.</li>
+                        <li><strong>Solution 2:</strong> Based on an internal ring gear transmission structure, utilizing DJI M3508 motors without gearboxes combined with internal ring gears for steering rotation. TMotor U8 Lite disc brushless motors were selected as the hub power source, paired with DM100 drivers and custom steering magnetic encoders for closed-loop drive. This significantly increased the chassis movement speed while effectively reducing weight and improving energy density compared to the DM6220+M3508 solution.</li>
+                    </ul>
+                </li>
+                <li><strong>Friction Launching Mechanism:</strong> Designed and compared two launching mechanisms: "three friction wheels" and "three friction belts". After multiple launch tests and analysis, the friction wheel solution had issues with excessive dispersion and inconsistent acceleration due to the small contact area with the ball. Ultimately, a three-friction-belt launching solution using 5065 motors with VESC drivers was adopted, significantly improving the uniformity of speed and direction during shooting.</li>
+                <li><strong>Dribbling Mechanism:</strong> Developed two dribbling mechanisms: pneumatic grippers with Z-axis lifting and friction wheels. Subsequent testing at the competition venue revealed that the pneumatic gripper was less effective due to ground flatness and rebound issues.</li>
             </ul>
-            <p>The robot successfully participated in the national competition and achieved excellent results.</p>
+            <p>The two robots had clear divisions of labor: one could complete the full process from dribbling to shooting, while the other could quickly swap its upper structure and was equipped with the more powerful U8 steering wheels to fulfill the defensive tasks in the dribbling and competitive matches respectively.</p>
         `,
         "project_2_title": "ROBOCON2024-Harvest Day",
         "project_2_desc": "As the Vice Captain and Mechanical Group Leader of the ECUST 'Wu Er' team, designed the complete vehicle structure for the competition robot.",
