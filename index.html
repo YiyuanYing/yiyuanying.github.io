@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo" onerror="this.src='https://via.placeholder.com/150'">
+        <h1 data-i18n="name">Your Name</h1>
+        <p class="university" data-i18n="university">University Name</p>
+
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#timeline" data-i18n="nav_timeline">Timeline</a></li>
+            <li><a href="#" data-i18n="nav_cv">CV</a></li>
+        </ul>
+
+        <div class="social-links">
+            <a href="https://github.com/YiyuanYing" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:yiyuanying@outlook.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="theme-toggle" class="btn-icon"><i class="fas fa-moon"></i></button>
+            <button id="lang-toggle" class="btn-text">中文</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2 data-i18n="intro_title">About Me</h2>
+            <p data-i18n="intro_text">
+                I am a Ph.D. student at University Name. My research interests include Machine Learning, Computer Vision, and Natural Language Processing. I am passionate about building AI systems that can understand and interact with the world.
+            </p>
+            
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 data-i18n="projects_title">Projects</h2>
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/robocon-2025-1.jpg" onerror="this.src='https://via.placeholder.com/300x200'" alt="Project 1">
+                    <h3 data-i18n="project_1_title">Project Title 1</h3>
+                    <p data-i18n="project_1_desc">Brief description of project 1.</p>
+                    <a href="project1.html" class="btn-details" data-i18n="project_view_details">View Details</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/robocon-2024-1.jpg" onerror="this.src='https://via.placeholder.com/300x200'" alt="Project 2">
+                    <h3 data-i18n="project_2_title">Project Title 2</h3>
+                    <p data-i18n="project_2_desc">Brief description of project 2.</p>
+                    <a href="#" class="btn-details" data-i18n="project_view_details">View Details</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/project3.jpg" onerror="this.src='https://via.placeholder.com/300x200'" alt="Project 3">
+                    <h3 data-i18n="project_3_title">Project Title 3</h3>
+                    <p data-i18n="project_3_desc">Brief description of project 3.</p>
+                    <a href="#" class="btn-details" data-i18n="project_view_details">View Details</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="images/project4.jpg" onerror="this.src='https://via.placeholder.com/300x200'" alt="Project 4">
+                    <h3 data-i18n="project_4_title">Project Title 4</h3>
+                    <p data-i18n="project_4_desc">Brief description of project 4.</p>
+                    <a href="#" class="btn-details" data-i18n="project_view_details">View Details</a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="images/project5.jpg" onerror="this.src='https://via.placeholder.com/300x200'" alt="Project 5">
+                    <h3 data-i18n="project_5_title">Project Title 5</h3>
+                    <p data-i18n="project_5_desc">Brief description of project 5.</p>
+                    <a href="#" class="btn-details" data-i18n="project_view_details">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline">
+            <h2 data-i18n="timeline_title">Timeline</h2>
+            
+            <div class="timeline-container">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="timeline_1_date">2025-9</span>
+                        <h3 data-i18n="timeline_1_title">Event Title 1</h3>
+                        <p data-i18n="timeline_1_desc">Description of event 1...</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="timeline_2_date">2025-07</span>
+                        <h3 data-i18n="timeline_2_title">Event Title 2</h3>
+                        <p data-i18n="timeline_2_desc">Description of event 2...</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="timeline_3_date">2024-12</span>
+                        <h3 data-i18n="timeline_3_title">Event Title 3</h3>
+                        <p data-i18n="timeline_3_desc">Description of event 3...</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="timeline_4_date">2023-9</span>
+                        <h3 data-i18n="timeline_4_title">Event Title 4</h3>
+                        <p data-i18n="timeline_4_desc">Description of event 4...</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="timeline_5_date">2023-8</span>
+                        <h3 data-i18n="timeline_5_title">Event Title 5</h3>
+                        <p data-i18n="timeline_5_desc">Description of event 5...</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
