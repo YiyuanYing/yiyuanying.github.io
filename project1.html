@@ -54,6 +54,31 @@
         .project-content li {
             margin-bottom: 0.5em;
         }
+        /* Image Row Styles */
+        .project-images-row {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project-image-item {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .project-image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid var(--border-color);
+        }
+        .image-caption {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -94,6 +119,38 @@
             <div class="project-content">
                 <div data-i18n="project_1_detail">
                     <!-- Content will be injected from translations.js -->
+                </div>
+            </div>
+
+            <!-- Added Images Row -->
+            <div class="project-images-row grid-row">
+                <div class="project-image-item">
+                    <img src="images/robocon-2025-2.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300'" alt="DM6220+M3508">
+                    <p class="image-caption" data-i18n="project_1_img1_caption">DM6220+M3508 Steering Wheel Module</p>
+                </div>
+                <div class="project-image-item">
+                    <img src="images/robocon-2025-3.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300'" alt="M3508+U8 Lite">
+                    <p class="image-caption" data-i18n="project_1_img2_caption">M3508+U8 Lite Steering Wheel Module</p>
+                </div>
+            </div>
+
+            <!-- Second Images Row -->
+            <div class="project-images-row grid-row">
+                <div class="project-image-item">
+                    <img src="images/robocon-2025-4.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300'" alt="R1 Robot">
+                    <p class="image-caption" data-i18n="project_1_img3_caption">R1 Robot in Competition</p>
+                </div>
+                <div class="project-image-item">
+                    <img src="images/robocon-2025-5.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x300'" alt="R2 Robot">
+                    <p class="image-caption" data-i18n="project_1_img4_caption">R2 Robot in Competition</p>
+                </div>
+            </div>
+
+            <!-- Third Images Row (Group Photo) -->
+            <div class="project-images-row">
+                <div class="project-image-item">
+                    <img src="images/robocon-2025-6.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="Team Photo">
+                    <p class="image-caption" data-i18n="project_1_img5_caption">Group photo of ECUST 'Wu Er' team members in 2025 season</p>
                 </div>
             </div>
 

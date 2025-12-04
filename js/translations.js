@@ -38,6 +38,11 @@ const translations = {
             </ul>
             <p>The two robots had clear divisions of labor: one could complete the full process from dribbling to shooting, while the other could quickly swap its upper structure and was equipped with the more powerful U8 steering wheels to fulfill the defensive tasks in the dribbling and competitive matches respectively.</p>
         `,
+        "project_1_img1_caption": "DM6220+M3508 Steering Wheel Module",
+        "project_1_img2_caption": "M3508+U8 Lite Steering Wheel Module",
+        "project_1_img3_caption": "R1 Robot in ROBOCON 2025 Competition",
+        "project_1_img4_caption": "R2 Robot in ROBOCON 2025 Competition",
+        "project_1_img5_caption": "Group photo of ECUST 'Wu Er' team members in 2025 season",
         "project_2_title": "ROBOCON2024-Harvest Day",
         "project_2_desc": "As the Vice Captain and Mechanical Group Leader of the ECUST 'Wu Er' team, designed the complete vehicle structure for the competition robot.",
         "project_3_title": "Research on Multimodal Robot Perception & Interaction",
@@ -90,17 +95,22 @@ const translations = {
             <p>作为华东理工大学“无贰”战队的技术顾问，我主要负责参赛机器人的机械结构设计与指导工作。</p>
             <p>主要贡献包括：</p>
             <ul>
-                <li>舵轮模组：在备赛周期中迭代设计了两套舵轮轮组方案。
+                <li><strong>舵轮模组：</strong>在备赛周期中迭代设计了两套舵轮轮组方案。
                     <ul>
-                        <li>方案一：采用DM6220中空电机实现直驱转向，配合定制减速箱的DJI M3508电机驱动轮毂，同时在舵向电机处加入交叉滚子轴承以提高轴向受力能力，相较于前两年参赛机器人中使用的麦轮底盘具备较高响应速度与运动速度；</li>
-                        <li>方案二：基于内齿圈传动结构，利用无减速箱的DJI M3508配合内齿圈实现舵向转动，选用TMotor U8 Lite盘式无刷电机作为轮毂动力源，并配合DM100驱动与自制舵向磁编码器以完成闭环驱动，大幅提升了底盘移动速度，同时相较于DM6220+M3508舵轮方案能有效减重与提高能量密度。</li>
+                        <li><strong>方案一：</strong>采用DM6220中空电机实现直驱转向，配合定制减速箱的DJI M3508电机驱动轮毂，同时在舵向电机处加入交叉滚子轴承以提高轴向受力能力，相较于前两年参赛机器人中使用的麦轮底盘具备较高响应速度与运动速度；</li>
+                        <li><strong>方案二：</strong>基于内齿圈传动结构，利用无减速箱的DJI M3508配合内齿圈实现舵向转动，选用TMotor U8 Lite盘式无刷电机作为轮毂动力源，并配合DM100驱动与自制舵向磁编码器以完成闭环驱动，大幅提升了底盘移动速度，同时相较于DM6220+M3508舵轮方案能有效减重与提高能量密度。</li>
                     </ul>
                 </li>
-                <li>摩擦发射机构：设计并对比了“三摩擦轮”与“三摩擦带”两种发射机构。经多次发射测试分析，摩擦轮方案存在球体接触面积小导致的散布过大与加速不一致问题，最终采用了使用5065电机配合VESC驱动的三摩擦带发射方案，显著提升了投篮时出射的速度与方向均一性。</li>
-                <li>运球机构：开发了配合Z轴升降的气动夹爪与摩擦轮两套运球机构。后续在赛场时的测试发现，由于场地地面平整度与回弹的原因，气缸夹爪的效果并不理想。</li>
+                <li><strong>摩擦发射机构：</strong>设计并对比了“三摩擦轮”与“三摩擦带”两种发射机构。经多次发射测试分析，摩擦轮方案存在球体接触面积小导致的散布过大与加速不一致问题，最终采用了使用5065电机配合VESC驱动的三摩擦带发射方案，显著提升了投篮时出射的速度与方向均一性。</li>
+                <li><strong>运球机构：</strong>开发了配合Z轴升降的气动夹爪与摩擦轮两套运球机构。后续在赛场时的测试发现，由于场地地面平整度与回弹的原因，气缸夹爪的效果并不理想。</li>
             </ul>
             <p>两台机器人有着较为明确的分工：一台可完整运球到投篮的全流程，另一台则可快速更换上部结构，并配合动力更强的U8舵轮，以分别完成运球赛与竞技赛中防守的任务需求。</p>
         `,
+        "project_1_img1_caption": "DM6220+M3508舵轮轮组",
+        "project_1_img2_caption": "M3508+U8 Lite舵轮轮组",
+        "project_1_img3_caption": "比赛中的R1机器人",
+        "project_1_img4_caption": "比赛中的R2机器人",
+        "project_1_img5_caption": "2025赛季华东理工大学”无贰“战队队员合影",
         "project_2_title": "ROBOCON2024-颗粒归仓",
         "project_2_desc": "作为华东理工大学“无贰”战队的副队长与机械组组长，设计了一台参赛机器人的整车结构。",
         "project_3_title": "多模态机器人感知与交互系统的研究",
