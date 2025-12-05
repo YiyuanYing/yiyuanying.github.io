@@ -39,6 +39,7 @@ const translations = {
                 <li><strong>Dribbling Mechanism:</strong> Developed two dribbling mechanisms: pneumatic grippers with Z-axis lifting and friction wheels. Subsequent testing at the competition venue revealed that the pneumatic gripper was less effective due to ground flatness and rebound issues.</li>
             </ul>
             <p>The two robots had clear divisions of labor: one could complete the full process from dribbling to shooting, while the other could quickly swap its upper structure and was equipped with the more powerful U8 steering wheels to fulfill the defensive tasks in the dribbling and competitive matches respectively.</p>
+            <p>At the 2025 ROBOCON (Jiangyin), the team won <strong> National 3rd Prize in the main competition, 2nd Prize in Dribbling, and 3rd Prize in Shooting</strong>. Previously, at the National Exchange Competition held at South China University of Technology (May 2025), we secured <strong> National 2nd Prize and the Best Technology Award</strong>. Subsequently, the project 'Intelligent Basketball Training Platform' (derived from one of the robots) won <strong>National 2nd Prize</strong> in the 2025 China College Students Mechanical Engineering Innovation and Creativity Competition</p>
         `,
         "project_1_img1_caption": "DM6220+M3508 Steering Wheel Module",
         "project_1_img2_caption": "M3508+U8 Lite Steering Wheel Module",
@@ -109,6 +110,7 @@ const translations = {
                 <li><strong>运球机构：</strong>开发了配合Z轴升降的气动夹爪与摩擦轮两套运球机构。后续在赛场时的测试发现，由于场地地面平整度与回弹的原因，气缸夹爪的效果并不理想。</li>
             </ul>
             <p>两台机器人有着较为明确的分工：一台可完整运球到投篮的全流程，另一台则可快速更换上部结构，并配合动力更强的U8舵轮，以分别完成运球赛与竞技赛中防守的任务需求。</p>
+            <p>团队在2025年ROBOCON江阴赛区中获“飞身上篮”赛项<strong>竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖</strong>。此前参加了2025年5月于华南理工大学举办的2025年ROBOCON全国交流赛并获得“飞身上篮”赛项交流赛<strong>全国二等奖与最佳技术奖</strong>。此后以其中一台机器人为主体的“青出于篮——智能化篮球训练平台”项目获得2025年中国大学生机械工程创新创意大赛<strong>全国二等奖与长三角赛区一等奖</strong>。</p>
         `,
         "project_1_img1_caption": "DM6220+M3508舵轮轮组",
         "project_1_img2_caption": "M3508+U8 Lite舵轮轮组",
