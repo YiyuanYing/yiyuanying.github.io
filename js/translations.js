@@ -8,6 +8,8 @@ const translations = {
         "nav_projects": "Projects",
         "nav_timeline": "Timeline",
         "nav_cv": "CV",
+        "back_home": "Back to Home",
+        "download_cv": "Download PDF",
         "intro_title": "About Me",
         "intro_text": `<p>
         I am currently a first-year master's student in Intelligent Manufacturing and Robotics at the Department of Mechanical and Energy Engineering, Southern University of Science and Technology (SUSTech), under the supervision of Assoc. Prof. U Kei CHEANG.
@@ -80,6 +82,8 @@ const translations = {
         "nav_projects": "项目经历",
         "nav_timeline": "时间轴",
         "nav_cv": "简历",
+        "back_home": "返回主页",
+        "download_cv": "下载 PDF",
         "intro_title": "个人介绍",
         "intro_text": `<p>我目前是南方科技大学机械与能源工程系智能制造与机器人专业的硕士一年级研究生，导师是郑裕基副教授。</p>
         <p>我本科毕业于华东理工大学机械与动力工程学院，获得机械设计制造及其自动化专业工学学士学位。</p>`,
