@@ -48,12 +48,30 @@ const translations = {
         "project_1_img5_caption": "Group photo of ECUST 'Wu Er' team members in 2025 season",
         "project_2_title": "ROBOCON2024-Harvest Day",
         "project_2_desc": "As the Vice Captain and Mechanical Group Leader of the ECUST 'Wu Er' team, designed the complete vehicle structure for the competition robot.",
+        "project_2_detail": `
+            <p>The theme of the 2024 ROBOCON competition was "Harvest Day." It required teams to design two robots capable of completing gripping, throwing, and transporting tasks within a limited time. Robot 1 (R1) was tasked with picking and placing seedlings in Zones 1 & 2, as well as gripping and passing grains. Robot 2 (R2) was required to fully autonomously grab specific grains in Zone 3 and deposit them into silos.</p>
+            <p>As the <strong>Vice Captain and Mechanical Group Leader</strong> of the ECUST "Wu Er" team, I led the complete vehicle mechanical design of R1 and participated in the structural design of R2. I was also responsible for daily team management and operations, including organizing multiple mechanical training sessions during recruitment to enhance the team's overall technical proficiency and workflow efficiency.</p>
+            <p>Key contributions include:</p>
+            <ul>
+                <li><strong>Chassis Structural Design:</strong> Developed two sets of Mecanum wheel chassis systems driven by DJI M3508 motors. One utilized off-the-shelf wheels directly driven by the motor shaft, offering a simple structure but subjecting the shaft system to significant <strong>bending moment loads</strong>. The other featured <strong>custom Mecanum wheels with an embedded design</strong> to enhance chassis compactness and the stable load-bearing capacity of the shaft system.</li>
+                <li><strong>Gripping & Transfer Mechanisms:</strong> Implemented a <strong>gantry-style robotic arm</strong> on R1 for the simultaneous picking and placing of multiple seedlings. Integrated a <strong>2-DOF robotic arm</strong> combined with a <strong>stored-energy ejection mechanism</strong> at the rear of R1 to transfer grains to Zone 3. On R2, deployed a <strong>4-DOF robotic arm</strong> equipped with a <strong>ducted fan</strong> to achieve vacuum suction and placement of grains.</li>
+            </ul>
+            <p>The team secured <strong>National 3rd Prize in the Main Competition</strong> and <strong>National 2nd Prize in the Operation Skills Challenge</strong> at the 2024 ROBOCON National Championship. Subsequently, the "Autonomous Beverage Delivery Robot" project (based on the R1 platform) won <strong>National 3rd Prize</strong> in the 2024 China College Students Mechanical Engineering Innovation and Creativity Competition and <strong>1st Prize</strong> in the Yangtze River Delta Division.</p>
+        `,
+        "project_2_img1_caption": "R1 Robot in Competition",
+        "project_2_img2_caption": "R2 Robot in Competition",
+        "project_2_img3_caption": "Group photo of ECUST 'Wu Er' team members in 2024 season",
         "project_3_title": "Research on Multimodal Robot Perception & Interaction",
         "project_3_desc": "Designed a robotic leg structure tailored for planetary surface environments and achieved stable, efficient autonomous crawling control based on reinforcement learning.",
         "project_4_title": "Research on Space Target Situational Awareness and Evaluation",
         "project_4_desc": "Integrated vision algorithms with LLM reasoning to enable space target tracking, as well as active perception and manipulation by a robotic arm under constrained field-of-view conditions.",
         "project_5_title": "Development of Intelligent Charging System for Future Parking Lots",
         "project_5_desc": "Designed and developed a novel intelligent charging system based on a two-dimensional mobile mechanism, significantly enhancing charging efficiency.",
+
+        "btn_training_video": "Training Video",
+        "btn_demo_video_1": "Demo Video 1",
+        "btn_demo_video_2": "Demo Video 2",
+        "btn_open_source_drawings": "Open Source CAD",
 
         "timeline_title": "Timeline",
         "timeline_1_date": "2025.7",
@@ -119,12 +137,30 @@ const translations = {
         "project_1_img5_caption": "2025赛季华东理工大学”无贰“战队队员合影",
         "project_2_title": "ROBOCON2024-颗粒归仓",
         "project_2_desc": "作为华东理工大学“无贰”战队的副队长与机械组组长，设计了一台参赛机器人的整车结构。",
+        "project_2_detail": `
+            <p>2024年的ROBOCON赛事的主题为“颗粒归仓”，要求参赛队设计两台能够在规定时间内完成抓取、投掷与搬运任务的机器人，其中一台（R1）要求能在一区与二区完成夹取放置秧苗、夹取并传递谷物的任务；另一台（R2）要求能在三区全自动地抓取特定的谷物并放置入筒仓之中。</p>
+            <p>作为华东理工大学“无贰”战队的副队长与机械组组长，我主要负责R1的整车机械结构设计工作，同时也参与了R2的结构设计工作。此外还负责战队的日常管理与运营工作，包括在招新期间组织多次机械组培训，提高团队整体的技术水平和工作效率。</p>
+            <p>主要贡献包括：</p>
+            <ul>
+                <li><strong>底盘结构设计：</strong>设计了两套使用DJI M3508电机驱动的麦轮底盘，其中一套使用成品麦轮并通过M3508的电机轴输出，结构简单但对电机轴系有较大的弯矩载荷；另一套则使用内嵌结构设计的定制麦轮以提升底盘的紧凑性与轴系的稳定承载能力。</li>
+                <li><strong>夹取与传递机构：</strong>在R1上使用了龙门架构型的机械臂完成多个秧苗的同时夹取与放置，在R1后部采用了一组双自由度机械臂配合蓄能弹射机构用于将谷物传递至三区。在R2上使用了一个四自由度机械臂并配合涵道风扇完成对谷物的吸取与放置。</li>
+            </ul>
+            <p>团队在2024年ROBOCON全国赛中获“颗粒归仓”赛项<strong>竞技赛全国三等奖与操作技能挑战赛全国二等奖</strong>。此后以R1机器人为主体的“自主饮料配送机器人”项目获得2024年中国大学生机械工程创新创意大赛<strong>全国三等奖与长三角赛区一等奖</strong>。</p>
+        `,
+        "project_2_img1_caption": "比赛中的R1机器人",
+        "project_2_img2_caption": "比赛中的R2机器人",
+        "project_2_img3_caption": "2024赛季华东理工大学”无贰“战队队员合影",
         "project_3_title": "多模态机器人感知与交互系统的研究",
         "project_3_desc": "设计了面向星表环境的机器人腿部结构，并基于强化学习实现了稳定高效的自主爬行控制。",
         "project_4_title": "空间目标态势感知、博弈与评估方法的研究",
         "project_4_desc": "融合视觉算法与LLM推理，实现空间目标跟踪及受限视野下的机械臂主动感知与操作。",
         "project_5_title": "未来停车场智能充电系统设计开发",
         "project_5_desc": "设计开发了一种基于二维移动机构的新型智能充电系统，大幅提升充电效率。",
+
+        "btn_training_video": "培训视频",
+        "btn_demo_video_1": "演示视频1",
+        "btn_demo_video_2": "演示视频2",
+        "btn_open_source_drawings": "开源图纸",
 
         "timeline_title": "时间轴",
         "timeline_1_date": "2025.7",
