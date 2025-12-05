@@ -47,33 +47,27 @@
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/150'">
-        <h1 data-i18n="name">Yiyuan Ying</h1>
-        <p class="university" data-i18n="university">University Name</p>
-
-        <ul class="nav-links">
-            <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
-            <li><a href="index.html#projects" data-i18n="nav_projects">Projects</a></li>
-            <li><a href="index.html#timeline" data-i18n="nav_timeline">Timeline</a></li>
-            <li><a href="cv.html" class="active" data-i18n="nav_cv">CV</a></li>
-        </ul>
-
-        <div class="social-links">
-            <a href="https://github.com/YiyuanYing" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:yiyuan.ying@example.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <img src="images/profile.jpg" alt="Profile Photo" class="nav-profile-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/150'">
+            <h1 data-i18n="name">Yiyuan Ying</h1>
         </div>
 
-        <div class="sidebar-footer">
-            <button id="theme-toggle" class="btn-icon"><i class="fas fa-moon"></i></button>
+        <nav class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="index.html#timeline" data-i18n="nav_timeline">Timeline</a></li>
+                <li><a href="cv.html" class="active" data-i18n="nav_cv">CV</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
             <button id="lang-toggle" class="btn-text">中文</button>
+            <button id="theme-toggle" class="btn-icon"><i class="fas fa-moon"></i></button>
         </div>
-        <div class="sidebar-copyright">
-            &copy; 2023-2025 Verso_X | Yiyuan Ying
-        </div>
-    </aside>
+    </header>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -85,6 +79,17 @@
             <iframe id="cv-viewer" src=""></iframe>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://github.com/YiyuanYing" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:yiyuanying@outlook.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2021-2025 Verso_X | Yiyuan Ying
+        </div>
+    </footer>
 
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
