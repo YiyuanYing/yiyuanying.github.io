@@ -64,6 +64,30 @@ const translations = {
         "project_2_img3_caption": "Group photo of ECUST 'Wu Er' team members in 2024 season",
         "project_3_title": "Research on Multimodal Robot Perception & Interaction",
         "project_3_desc": "Designed a robotic leg structure tailored for planetary surface environments and achieved stable, efficient autonomous crawling control based on reinforcement learning.",
+        "project_3_detail": `
+            <p><strong>Project Background:</strong> This project is a collaboration with the Shanghai Xiaoyuan Innovation Center, supervised by Prof. Jianjun Yi and Dr. Liwei Chen. It aims to address the challenges of autonomous attachment and stable crawling for space robots on complex spacecraft surfaces, such as satellite solar panels.</p>
+            <h4>Key Achievements and Technical Innovations:</h4>
+            
+            <div class="feature-list">
+                <h4>1. Innovative Design of Multi-Modal Robot Mechanism</h4>
+                <ul>
+                    <li><strong>6-DOF Bio-Inspired Leg Structure:</strong> Designed a 6-degree-of-freedom leg structure specifically for spacecraft surface environments, functioning as both a "manipulator arm" and a "walking leg," supporting switching between bipedal and multi-pedal configurations.</li>
+                    <li><strong>Lightweight and Modular Design:</strong> Utilized topology optimization with 3D-printed materials, integrated with DM-Joint motors; the end-effector supports rapid switching between wheeled, footed, and gripper modules to adapt to various tasks.</li>
+                </ul>
+
+                <h4>2. Reinforcement Learning Control Framework Fused with Imitation Learning (RL + IL)</h4>
+                <ul>
+                    <li><strong>Teacher-Student Policy:</strong> Constructed a hybrid control architecture based on PPO and SAC algorithms. The <em>Teacher Policy</em> collects demonstration data in a noise-free environment to generate high-quality trajectories and optimal action sequences; the <em>Student Policy</em> aligns with teacher trajectories while incorporating noisy environmental observations, learning a policy model with strong transferability and generalization capabilities.</li>
+                    <li><strong>Reward Fusion Mechanism (RFM):</strong> The core algorithm integrates Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) with a Reward Fusion Mechanism (RFM). This dynamically balances foot-end stability, whole-body posture, energy consumption, and trajectory tracking accuracy within the reward function.</li>
+                    <li>Verified that the robot can achieve stable autonomous crawling along the edges of solar panels relying solely on proprioception and noisy observations.</li>
+                </ul>
+            </div>
+            
+            <p>The robot successfully learned stable crawling gaits for flexible solar panels in both simulation and physical emulation environments, demonstrating the effectiveness of this embodied intelligence framework in complex extraterrestrial environments such as microgravity.</p>
+        `,
+        "project_3_img1_caption": "Robot Algorithm Framework",
+        "project_3_img2_caption": "Autonomous Crawling Simulation",
+        "btn_code": "Code",
         "project_4_title": "Research on Space Target Situational Awareness and Evaluation",
         "project_4_desc": "Integrated vision algorithms with LLM reasoning to enable space target tracking, as well as active perception and manipulation by a robotic arm under constrained field-of-view conditions.",
         "project_5_title": "Development of Intelligent Charging System for Future Parking Lots",
@@ -158,6 +182,30 @@ const translations = {
         "project_2_img3_caption": "2024赛季华东理工大学”无贰“战队队员合影",
         "project_3_title": "多模态机器人感知与交互系统的研究",
         "project_3_desc": "设计了面向星表环境的机器人腿部结构，并基于强化学习实现了稳定高效的自主爬行控制。",
+        "project_3_detail": `
+            <p><strong>项目背景：</strong>本项目为上海霄元创新中心合作项目，由易建军教授与陈李炜博士指导。旨在解决空间机器人在卫星太阳能帆板等复杂星表结构上的自主吸附与稳定爬行难题。</p>
+            <h4>主要研究成果与技术创新：</h4>
+            
+            <div class="feature-list">
+                <h4>1. 多模态机器人机构创新设计</h4>
+                <ul>
+                    <li><strong>6-DOF仿生腿部结构：</strong>针对航天器表面工作环境设计了兼具“机械臂操作”与“足式行走”功能的6自由度腿部，且可支持双足/多足构型切换。</li>
+                    <li><strong>轻量化与模块化设计：</strong>采用3D打印材料进行拓扑优化设计，配合达妙关节电机；机械臂末端支持轮式/足式/夹爪等多种末端执行器的快速更换。</li>
+                </ul>
+
+                <h4>2. 融合模仿学习的强化学习控制框架 (RL + IL)</h4>
+                <ul>
+                    <li><strong>教师-学生策略：</strong>构建了基于 PPO 与 SAC 算法的混合控制架构。教师策略通过在无噪声环境中采集示教数据,构建高质量轨迹,获得表现最优的动作序列,用以指导后续策略学习；学生策略通过与教师轨迹对齐并结合实际带噪声环境观测，学习出具有迁移性和泛化能力的策略模型</li>
+                    <li><strong>多重奖励融合机制 (RFM)：</strong>算法核心融合了 PPO (Proximal Policy Optimization) 与 SAC (Soft Actor-Critic)，结合多重奖励融合机制（Reward Fusion Mechanism, RFM），在奖励函数中动态平衡了足端稳定性、全身姿态、能耗及轨迹跟踪精度 。</li>
+                    <li>验证了机器人能够在仅依赖本体感知（Proprioception）和带噪声观测的情况下，在太阳能帆板边缘实现稳定的自主爬行。</li>
+                </ul>
+            </div>
+            
+            <p>机器人成功在仿真及物理模拟环境中习得了针对柔性太阳能帆板的稳定爬行步态，证明了该具身智能框架在微重力等复杂地外环境下的有效性。</p>
+        `,
+        "project_3_img1_caption": "机器人算法框架",
+        "project_3_img2_caption": "自主爬行仿真",
+        "btn_code": "Code",
         "project_4_title": "空间目标态势感知、博弈与评估方法的研究",
         "project_4_desc": "融合视觉算法与LLM推理，实现空间目标跟踪及受限视野下的机械臂主动感知与操作。",
         "project_5_title": "未来停车场智能充电系统设计开发",
