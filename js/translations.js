@@ -1,5 +1,12 @@
 const translations = {
     "en": {
+        "page_title_home": "Yiyuan Ying | Personal Homepage",
+        "page_title_project1": "ROBOCON2025 - Robot Basketball",
+        "page_title_project2": "ROBOCON2024 - Harvest Day",
+        "page_title_project3": "Multimodal Robot Perception & Interaction",
+        "page_title_project4": "Research on Space Target Situational Awareness and Evaluation",
+        "page_title_project5": "Development of Intelligent Charging System for Future Parking Lots",
+        "page_title_cv": "CV | Yiyuan Ying",
         "name": "Yiyuan Ying",
         // "role": "Master Student",
         // "university": "<p>SUSTech</p><p>(Southern University of Science and Technology)</p>",
@@ -90,8 +97,40 @@ const translations = {
         "btn_code": "Code",
         "project_4_title": "Research on Space Target Situational Awareness and Evaluation",
         "project_4_desc": "Integrated vision algorithms with LLM reasoning to enable space target tracking, as well as active perception and manipulation by a robotic arm under constrained field-of-view conditions.",
+        "project_4_detail": "<p>Content coming soon...</p>",
+
         "project_5_title": "Development of Intelligent Charging System for Future Parking Lots",
         "project_5_desc": "Designed and developed a novel intelligent charging system based on a two-dimensional mobile mechanism, significantly enhancing charging efficiency.",
+        "project_5_detail": `
+        <p>Targeting the conflict between the surging number of new energy vehicles and the insufficiency of fixed charging piles, as well as resource wastage issues such as fuel vehicles occupying spots and vehicles remaining after charging caused by the existing "one-pile-per-space" model, this project developed an automated power distribution system based on two-dimensional mobile guide rails, aiming to achieve efficient power scheduling of "one-pile-serving-multiple-spaces".</p>
+        <h4>Main Technical Solutions and Innovations:</h4>
+        <div class="feature-list">
+            <h4>1. Mechanical Structure: 2D Mobile Power Distribution and Functional Modules</h4>
+            <ul>
+                <li><strong>2D Guide Rail Mobile Mechanism:</strong> Abandoning traditional fixed or 1D mobile solutions, an XY-axis 2D mobile platform based on a belt drive mechanism was designed. This mechanism combines ultrasonic sensor modules for position sensing and controls stepper motors to achieve precise 2D positioning of the power distribution unit at the top of the parking lot, significantly expanding the charging coverage range.</li>
+                <li><strong>Power Distribution Module (Gear Relay Structure):</strong> The core distribution unit adopts a mechanical relay structure where gears drive racks. Gear rotation drives two side racks to move in opposite directions, bringing the pantograph into contact with the power grid. Compared to traditional electromagnetic relays, this mechanical structure offers higher stability and safety under high voltage and high power transmission. In non-working states, the pantograph automatically retracts into an insulated enclosure to ensure safety.</li>
+                <li><strong>Integrated Cleaning Module:</strong> A scissor-type telescopic structure and a vacuuming device are integrated into the mobile base. Utilizing charging intervals, the system automatically cleans dust from the vehicle chassis by controlling the X-axis via a lead screw and the Y-axis via the scissor structure, achieving composite utilization of functions.</li>
+            </ul>
+            <h4>2. Control System Architecture</h4>
+            <ul>
+                <li>Uses Raspberry Pi 4B as the edge server, responsible for communicating with the cloud, receiving user commands, and running scheduling algorithms; uses Arduino Mega 2560 with TB6600 drivers to control stepper motors and execute specific motion logic.</li>
+                <li>Low-power long-distance transmission between Arduino and Raspberry Pi is achieved via LoRa modules; the Raspberry Pi interacts with the MySQL cloud database via Wi-Fi to realize real-time data synchronization between the user mini-program end and the hardware end.</li>
+            </ul>
+            <h4>3. Algorithm Optimization: Priority-Based Time-Domain Scheduling</h4>
+            <ul>
+                <li>Based on collected real-world parking and charging data (including SOC, stay duration, etc.), cluster analysis and gap assessment of charging demands were conducted.</li>
+                <li>Drawing on operating system process scheduling concepts, a time-domain optimization algorithm for the charging process was designed. The system calculates dynamic priorities based on the vehicle's current SOC and estimated departure time.</li>
+                <ul>
+                    <li>Prioritizes "urgently needed charging" vehicles (priority ≤ 0) and postpones non-urgent demands to achieve intelligent sorting.</li>
+                    <li>Simulation results show that the algorithm effectively achieved "peak shaving and valley filling". After application, the station's peak charging power decreased by 55.56%, and the comprehensive utilization rate of charging piles increased by about 2.5 times (from 11.99% to 29.98%).</li>
+                </ul>
+            </ul>
+        </div>
+        <p>The project completed the manufacturing and debugging of a complete second-generation prototype involving belt transmission, gear relay power distribution, and cleaning modules, verifying the rationality of the mechanical structure and the stability of the control system. A companion WeChat mini-program was also developed, realizing a complete loop of parking space reservation, charging status monitoring, and fee settlement.</p>
+        <p>The project won multiple national, provincial, and university-level awards, including the National Third Prize and Yangtze River Delta Region First Prize in the 2023 Chinese College Students Mechanical Engineering Innovation and Creativity Competition, and the First Prize in the 12th Shanghai College Students Mechanical Engineering Innovation Competition. In addition, the project was recognized by OPmobility (Plastic Omnium) and was invited to participate in "The Future Of Energy for Mobility" innovation challenge showcase hosted by OPmobility and SoScience in Paris, France, in September 2023.</p>
+        `,
+        "project_5_img1_caption": "Preliminary Data Analysis",
+        "project_5_img2_caption": "Mechanical Structure Diagram",
 
         "btn_training_video": "Training Video",
         "btn_demo_video_1": "Demo Video 1",
@@ -123,6 +162,13 @@ const translations = {
         "toggle_lang": "中文"
     },
     "zh": {
+        "page_title_home": "应一源 | 个人主页",
+        "page_title_project1": "ROBOCON2025 - 飞身上篮",
+        "page_title_project2": "ROBOCON2024 - 颗粒归仓",
+        "page_title_project3": "多模态机器人感知与交互",
+        "page_title_project4": "空间目标态势感知、博弈与评估方法的研究",
+        "page_title_project5": "未来停车场智能充电系统设计开发",
+        "page_title_cv": "简历 | 应一源",
         "name": "应一源",
         // "role": "硕士研究生",
         "university": "南方科技大学",
@@ -134,7 +180,7 @@ const translations = {
         "back_home": "返回主页",
         "download_cv": "下载 PDF",
         "intro_title": "个人介绍",
-        "intro_text": `<p>我目前是南方科技大学机械与能源工程系智能制造与机器人专业的硕士一年级研究生，导师是郑裕基副教授。</p>
+        "intro_text": `<p>我目前就读于南方科技大学机械与能源工程系智能制造与机器人专业，研一在读，导师是郑裕基副教授。</p>
         <p>我本科毕业于华东理工大学机械与动力工程学院，获得机械设计制造及其自动化专业工学学士学位。</p>`,
         
         "projects_title": "项目经历",
@@ -208,8 +254,40 @@ const translations = {
         "btn_code": "Code",
         "project_4_title": "空间目标态势感知、博弈与评估方法的研究",
         "project_4_desc": "融合视觉算法与LLM推理，实现空间目标跟踪及受限视野下的机械臂主动感知与操作。",
+        "project_4_detail": "<p>内容待补充...</p>",
         "project_5_title": "未来停车场智能充电系统设计开发",
         "project_5_desc": "设计开发了一种基于二维移动机构的新型智能充电系统，大幅提升充电效率。",
+        "project_5_detail": `
+        <p>针对新能源汽车保有量激增与固定充电桩数量不足的矛盾，以及现有“一桩一位”模式导致的燃油车占位、充电完成不挪车等资源浪费问题 ，本项目开发了一套基于二维移动导轨的自动化配电系统，旨在实现“一桩多位”的高效电力调度。</p>
+        <h4>主要技术方案与创新点：</h4>
+        <div class="feature-list">
+            <h4>1. 机械结构：二维移动配电与功能模块</h4>
+            <ul>
+                <li><strong>二维导轨移动机构：</strong>摒弃了传统的固定式或一维移动方案，设计了基于皮带传动机构的XY轴二维移动平台。该机构结合超声波传感模块进行位置感知，通过控制步进电机实现配电装置在停车场顶部的精准二维定位，大幅扩大了充电覆盖范围。</li>
+                <li><strong>配电模块（齿轮继电结构）：</strong>核心配电单元采用齿轮带动齿条的机械继电结构。通过齿轮转动驱动两侧齿条反向移动，带动受电弓与电网接触。相比传统电磁继电器，该机械结构在高电压、大功率传输下具有更高的稳定性和安全性。非工作状态下，受电弓自动回收进入绝缘外壳，确保安全。</li>
+                <li><strong>集成清洁模块：</strong>在移动底座集成了剪叉式伸缩结构与吸尘装置。系统利用充电间隙，通过丝杆控制X轴、剪叉结构控制Y轴，自动对车辆底盘进行除尘清洁，实现了功能的复合利用。</li>
+            </ul>
+            <h4>2. 控制系统架构</h4>
+            <ul>
+                <li>使用Raspberry Pi 4B作为边缘服务器，负责与云端通信、接收用户指令及运行调度算法；使用Arduino Mega 2560配合TB6600驱动器控制步进电机，执行具体的运动逻辑。</li>
+                <li>Arduino与树莓派之间通过LoRa模块进行低功耗远距离传输；树莓派通过Wi-Fi与MySQL云数据库交互，实现用户小程序端与硬件端的实时数据同步。</li>
+            </ul>
+            <h4>3. 算法优化：基于优先级的时域调度</h4>
+            <ul>
+                <li>基于采集的真实停车与充电数据（包括SOC、停留时长等），对充电需求进行聚类分析与缺口判断。</li>
+                <li>借鉴操作系统进程调度思想，设计了一套充电流程时域优化算法。系统根据车辆当前的SOC、预计离场时间计算动态优先级。</li>
+                <ul>
+                    <li>优先满足“急需充电”车辆（优先级≤0），对非紧急需求进行延后处理，实现智能排序 。</li>
+                    <li>仿真结果显示，该算法有效实现了“削峰填谷”。应用后，场站峰值充电功率降低了 55.56%，充电桩的综合利用率提升了约 2.5 倍（从11.99%提升至29.98%）。</li>
+                </ul>
+            </ul>
+        </div>
+        <p>项目完成了包含皮带传动、齿轮继电配电、清洁模块在内的完整二代样机制造与调试，验证了机械结构的合理性与控制系统的稳定性。同时开发了配套的微信小程序，实现了车位预约、充电状态监控及费用结算的完整闭环。</p>
+        <p>项目获得2023年中国大学生机械工程创新创意大赛全国三等奖与长三角赛区一等奖、第十二届上海市大学生机械工程创新大赛一等奖等多想国家级、省部级与校级奖项。此外，项目还获得彼欧集团认可，受邀参加了2023年9月在法国巴黎由彼欧集团（OPmobility）与SoScience举办的“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛展示。</p>
+        `,
+
+        "project_5_img1_caption": "项目前期数据分析",
+        "project_5_img2_caption": "项目机械结构示意图",
 
         "btn_training_video": "培训视频",
         "btn_demo_video_1": "演示视频1",
