@@ -98,6 +98,10 @@ const translations = {
         "project_4_title": "Research on Space Target Situational Awareness and Evaluation",
         "project_4_desc": "Integrated vision algorithms with LLM reasoning to enable space target tracking, as well as active perception and manipulation by a robotic arm under constrained field-of-view conditions.",
         "project_4_detail": "<p>Content coming soon...</p>",
+        "project_4_img1_caption": "Overall technical scheme for non-cooperative target recognition under large distance span",
+        "project_4_img2_caption": "Construction and verification of virtual and real simulation environment for non-cooperative target recognition",
+        "project_4_img3_caption": "Algorithm framework for LLM-driven robotic arm task execution",
+        "project_4_img4_caption": "Experimental results of LLM-driven robotic arm task execution algorithm",
 
         "project_5_title": "Development of Intelligent Charging System for Future Parking Lots",
         "project_5_desc": "Designed and developed a novel intelligent charging system based on a two-dimensional mobile mechanism, significantly enhancing charging efficiency.",
@@ -254,7 +258,30 @@ const translations = {
         "btn_code": "Code",
         "project_4_title": "空间目标态势感知、博弈与评估方法的研究",
         "project_4_desc": "融合视觉算法与LLM推理，实现空间目标跟踪及受限视野下的机械臂主动感知与操作。",
-        "project_4_detail": "<p>内容待补充...</p>",
+        "project_4_detail": `
+        <p><strong>项目背景：</strong> 随着太空探索的深入，非合作航天器（如失控卫星、太空垃圾）的捕获与在轨服务成为亟待解决的难题。传统方法依赖目标先验模型与预定义关键点，难以应对无合作标识的未知目标。本项目旨在建立一套从视觉感知到机械臂操作的完整解决方案。</p>
+
+        <p><strong>核心技术与方法：</strong></p>
+        <div class="feature-list">
+        <h4>1. 多尺度视觉感知系统</h4>
+            <ul>
+                <li><strong>远距离弱小目标追踪：</strong> 针对深空背景下的微弱目标，利用背景差分法与运动学筛选算法，可以高效实现对像素级点目标的连续侦测与轨迹锁定。</li>
+                <li><strong>搭建仿真环境生成数据集：</strong> 针对太空数据稀缺痛点，搭建了“Unity3D 虚拟仿真 + 3D 打印暗室物理仿真”的双源数据平台。通过模拟真实轨道光照与相机成像参数，生成了高保真的大规模训练数据集，有效缩小了仿真与现实的差距。</li>
+            </ul>
+
+            <h4>2. 基于 LLM 的具身智能博弈</h4>
+            <ul>
+                <li><strong>启发式任务规划：</strong> 针对近距离操作中“视野受限”与“部件遮挡”的难题，创新性提出基于大语言模型（LLM）的启发式规划框架。系统将视觉观测（YOLO）转化为语义描述，利用 LLM 内置的航天器结构先验知识（如“发动机通常位于背离帆板面”），推理不可见部件的方位。</li>
+                <li><strong>主动感知闭环：</strong> 建立了“观测-推理-行动”的闭环机制。机械臂不再盲目搜索，而是根据 LLM 的推理结果主动调整观测视角，在局部视野下实现了对遮挡目标的精准定位与抓取，显著提升了任务成功率。</li>
+            </ul>
+        </div>
+
+        <p>本项目成功实现了在复杂光照及遮挡环境下对非合作目标的稳定识别与追踪，验证了 LLM 在空间机器人智能决策中的应用潜力，为在轨服务任务提供了新的技术路径。</p>
+        `,
+        "project_4_img1_caption": "大距离跨度下对非合作目标识别的整体技术方案",
+        "project_4_img2_caption": "非合作目标识别虚拟与现实仿真环境搭建与验证",
+        "project_4_img3_caption": "LLM驱动机械臂执行任务算法框架",
+        "project_4_img4_caption": "LLM驱动机械臂执行任务算法实验结果",
         "project_5_title": "未来停车场智能充电系统设计开发",
         "project_5_desc": "设计开发了一种基于二维移动机构的新型智能充电系统，大幅提升充电效率。",
         "project_5_detail": `
