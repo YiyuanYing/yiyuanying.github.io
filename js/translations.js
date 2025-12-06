@@ -97,7 +97,26 @@ const translations = {
         "btn_code": "Code",
         "project_4_title": "Research on Space Target Situational Awareness and Evaluation",
         "project_4_desc": "Integrated vision algorithms with LLM reasoning to enable space target tracking, as well as active perception and manipulation by a robotic arm under constrained field-of-view conditions.",
-        "project_4_detail": "<p>Content coming soon...</p>",
+        "project_4_detail": `
+        <p><strong>Project Background:</strong> With the deepening of space exploration, the capture and on-orbit servicing of non-cooperative spacecraft (such as uncontrolled satellites and space debris) have become critical challenges. Traditional methods rely on prior models of the target and pre-defined keypoints, making it difficult to cope with unknown targets lacking cooperative markers. This project aims to establish a complete solution ranging from visual perception to robotic arm manipulation.</p>
+
+        <p><strong>Core Technologies and Methods:</strong></p>
+        <div class="feature-list">
+        <h4>1. Multi-scale Visual Perception System</h4>
+            <ul>
+                <li><strong>Long-range Dim Target Tracking:</strong> Targeting dim objects against deep space backgrounds, background subtraction and kinematic screening algorithms are utilized to efficiently achieve continuous detection and trajectory locking of pixel-level point targets.</li>
+                <li><strong>Simulation Environment for Dataset Generation:</strong> Addressing the pain point of space data scarcity, a dual-source data platform combining "Unity3D Virtual Simulation + 3D-Printed Darkroom Physical Simulation" was constructed. By simulating real orbital lighting and camera imaging parameters, high-fidelity large-scale training datasets were generated, effectively narrowing the gap between simulation and reality.</li>
+            </ul>
+
+            <h4>2. LLM-based Embodied Intelligent Game</h4>
+            <ul>
+                <li><strong>Heuristic Task Planning:</strong> To address the challenges of "limited field of view" and "component occlusion" during close-range operations, a heuristic planning framework based on Large Language Models (LLMs) was innovatively proposed. The system converts visual observations (YOLO) into semantic descriptions and leverages the LLM's intrinsic prior knowledge of spacecraft structures (e.g., "engines are usually located on the face opposite the solar panels") to infer the location of invisible components.</li>
+                <li><strong>Active Perception Closed-Loop:</strong> An "Observation-Reasoning-Action" closed-loop mechanism was established. The robotic arm avoids blind searching and instead actively adjusts its observation viewpoint based on LLM reasoning results, achieving precise localization and grasping of occluded targets within a local field of view, significantly improving the task success rate.</li>
+            </ul>
+        </div>
+
+        <p>This project successfully achieved stable identification and tracking of non-cooperative targets under complex lighting and occlusion environments, validated the application potential of LLMs in intelligent decision-making for space robots, and provided a new technical pathway for on-orbit servicing missions.</p>
+        `,
         "project_4_img1_caption": "Overall technical scheme for non-cooperative target recognition under large distance span",
         "project_4_img2_caption": "Construction and verification of virtual and real simulation environment for non-cooperative target recognition",
         "project_4_img3_caption": "Algorithm framework for LLM-driven robotic arm task execution",
