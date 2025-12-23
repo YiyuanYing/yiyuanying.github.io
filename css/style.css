@@ -320,7 +320,7 @@ h3 {
 .timeline-container::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 19px;
     top: 10px;
     bottom: 0;
     width: 2px;
@@ -339,17 +339,22 @@ h3 {
     transform: translateX(5px);
 }
 
-.timeline-dot {
+.timeline-icon {
     position: absolute;
-    left: 13px;
-    top: 5px;
-    width: 16px;
-    height: 16px;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: var(--accent-gradient);
-    border: 3px solid var(--bg-color);
-    box-shadow: 0 0 0 2px var(--accent-color);
+    background: var(--card-bg);
+    border: 2px solid var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+    color: var(--accent-color);
+    box-shadow: var(--shadow-sm);
+    font-size: 1rem;
 }
 
 .timeline-date {

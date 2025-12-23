@@ -19,12 +19,10 @@ const translations = {
         "back_home": "Back to Home",
         "download_cv": "Download PDF",
         "intro_title": "About Me",
-        "intro_text": `<p>
-        I am currently a first-year master's student in Intelligent Manufacturing and Robotics at the Department of Mechanical and Energy Engineering, Southern University of Science and Technology (SUSTech), under the supervision of Assoc. Prof. U Kei CHEANG.
-    </p>
-    <p>
-        I received my Bachelor of Engineering degree in Mechanical Design, Manufacturing and Automation from the School of Mechanical and Power Engineering at East China University of Science and Technology (ECUST).
-    </p>`,
+        "intro_text": `<p>I am currently a first-year master's student at the Department of Mechanical and Energy Engineering, Southern University of Science and Technology (SUSTech), under the supervision of <a href="https://faculty.sustech.edu.cn/?tagid=zhengyj&go=2&lang=en" target="_blank">Assoc. Prof. U Kei CHEANG</a>.</p>
+        <p>I received my Bachelor of Engineering degree in Mechanical Design, Manufacturing and Automation from the School of Mechanical and Power Engineering at East China University of Science and Technology (ECUST).</p>
+        <p>Through several years of competition experience and project practice, I have primarily focused on mechanical structure design, developing a solid foundation in mechanical system modeling and engineering implementation. In addition, I have participated in projects related to reinforcement-learning-based intelligent control and visual perception, gaining practical experience at the algorithmic level.</p>
+        `,
 
         "projects_title": "Projects",
         "project_view_details": "View Details",
@@ -161,15 +159,24 @@ const translations = {
         "btn_open_source_drawings": "Open Source CAD",
 
         "timeline_title": "Timeline",
+        "timeline_sustech_enroll_date": "2025.9",
+        "timeline_sustech_enroll_title": "Master's Enrollment at SUSTech",
+        "timeline_sustech_enroll_desc": "Enrolled in the Department of Mechanical and Energy Engineering at Southern University of Science and Technology (SUSTech) for a Master's degree, majoring in Intelligent Manufacturing and Robotics.",
+        "timeline_ecust_grad_date": "2025.6",
+        "timeline_ecust_grad_title": "Bachelor's Graduation from ECUST",
+        "timeline_ecust_grad_desc": "Graduated from East China University of Science and Technology (ECUST) with a Bachelor of Engineering degree, and was awarded honors such as Outstanding Graduate of the University.",
+        "timeline_ecust_enroll_date": "2021.9",
+        "timeline_ecust_enroll_title": "Bachelor's Enrollment at ECUST",
+        "timeline_ecust_enroll_desc": "Enrolled in the School of Mechanical and Power Engineering at East China University of Science and Technology (ECUST) for undergraduate studies, majoring in Mechanical Design, Manufacturing and Automation.",
         "timeline_1_date": "2025.7",
         "timeline_1_title": "ROBOCON 2025 'Robot Basketball' National Championship",
-        "timeline_1_desc": "Won National 3rd Prize (Main), 2nd (Dribbling), and 3rd (Shooting). Also achieved National 2nd and Regional 1st Prize in the 2025 Mechanical Engineering Innovation Competition.",
+        "timeline_1_desc": "Representing ECUST, won the National 3rd Prize in the Main Competition, 2nd Prize in Dribbling, and 3rd Prize in Shooting in the 'Robot Basketball' event. The participating robot subsequently won the National 2nd Prize and Regional 1st Prize in the 2025 China College Students Mechanical Engineering Innovation and Creativity Competition.",
         "timeline_2_date": "2025.5",
         "timeline_2_title": "ROBOCON 2025 'Robot Basketball' National Exchange Competition",
-        "timeline_2_desc": "Awarded National 2nd Prize and the Best Technology Award.",
+        "timeline_2_desc": "Representing ECUST, won the National 2nd Prize and the Best Technology Award in the 'Robot Basketball' National Exchange Competition.",
         "timeline_3_date": "2024.7",
         "timeline_3_title": "ROBOCON 2024 'Harvest Day' National Championship",
-        "timeline_3_desc": "Won National 3rd Prize (Main) and 2nd Prize (Skills Challenge). Also achieved National 3rd and Regional 1st Prize in the 2024 Mechanical Engineering Innovation Competition.",
+        "timeline_3_desc": "Representing ECUST, won the National 3rd Prize in the Main Competition and 2nd Prize in the Operation Skills Challenge in the 'Harvest Day' event. The participating robot subsequently won the National 3rd Prize and Regional 1st Prize in the 2024 China College Students Mechanical Engineering Innovation and Creativity Competition.",
         "timeline_4_date": "2023.9",
         "timeline_4_title": "'The Future Of Energy for Mobility' Creative Competition",
         "timeline_4_desc": "Invited by OPmobility and SoScience to Paris, France, to showcase the 'Intelligent Charging System for Future Parking' project at 'The Future Of Energy for Mobility'.",
@@ -203,8 +210,11 @@ const translations = {
         "back_home": "返回主页",
         "download_cv": "下载 PDF",
         "intro_title": "个人介绍",
-        "intro_text": `<p>我目前就读于南方科技大学机械与能源工程系智能制造与机器人专业，研一在读，导师是郑裕基副教授。</p>
-        <p>我本科毕业于华东理工大学机械与动力工程学院，获得机械设计制造及其自动化专业工学学士学位。</p>`,
+        "intro_text": `
+        <p>我目前是南方科技大学机械与能源工程系的硕士一年级研究生，导师是<a href="https://faculty.sustech.edu.cn/?tagid=zhengyj&go=2&lang=en" target="_blank">郑裕基副教授</a>。</p>
+        <p>我本科毕业于华东理工大学机械与动力工程学院，获得机械设计制造及其自动化专业工学学士学位。</p>
+        <p>在过去数年的参赛经历与项目实践中，我主要负责机械结构设计，具备较为扎实的机械系统建模与工程实现能力。同时，我也曾参与基于强化学习的智能控制与视觉感知相关项目，在算法层面具备一定的实践经验。</p>
+        `,
         
         "projects_title": "项目经历",
         "project_view_details": "查看详情",
@@ -341,15 +351,24 @@ const translations = {
         "btn_open_source_drawings": "开源图纸",
 
         "timeline_title": "时间轴",
+        "timeline_sustech_enroll_date": "2025.9",
+        "timeline_sustech_enroll_title": "南方科技大学硕士入学",
+        "timeline_sustech_enroll_desc": "进入南方科技大学机械与能源工程系攻读硕士学位，专业是智能制造与机器人。",
+        "timeline_ecust_grad_date": "2025.6",
+        "timeline_ecust_grad_title": "华东理工大学本科毕业",
+        "timeline_ecust_grad_desc": "从华东理工大学毕业，获得工学学士学位，同时还获得校级优秀毕业生等荣誉。",
+        "timeline_ecust_enroll_date": "2021.9",
+        "timeline_ecust_enroll_title": "华东理工大学本科入学",
+        "timeline_ecust_enroll_desc": "进入华东理工大学机械与动力工程学院开始本科学习，专业为机械设计制造及其自动化。",
         "timeline_1_date": "2025.7",
         "timeline_1_title": "2025年全国大学生机器人大赛ROBOCON“飞身上篮”全国赛",
-        "timeline_1_desc": "获“飞身上篮”赛项竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖，参赛机器人后续还获2025年中国大学生机械工程创新创意大赛全国二等奖与长三角赛区一等奖。",
+        "timeline_1_desc": "代表华东理工大学获“飞身上篮”赛项竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖，参赛机器人后续还获2025年中国大学生机械工程创新创意大赛全国二等奖与长三角赛区一等奖。",
         "timeline_2_date": "2025.5",
         "timeline_2_title": "2025年全国大学生机器人大赛ROBOCON“飞身上篮”全国交流赛",
-        "timeline_2_desc": "获“飞身上篮”赛项交流赛全国二等奖与最佳技术奖。",
+        "timeline_2_desc": "代表华东理工大学获“飞身上篮”赛项交流赛全国二等奖与最佳技术奖。",
         "timeline_3_date": "2024.7",
         "timeline_3_title": "2024年全国大学生机器人大赛ROBOCON“颗粒归仓”全国赛",
-        "timeline_3_desc": "获”颗粒归仓“赛项竞技赛全国三等奖，操作技能挑战赛全国二等奖，参赛机器人后续还获2024年中国大学生机械工程创新创意大赛全国三等奖与长三角赛区一等奖。",
+        "timeline_3_desc": "代表华东理工大学获”颗粒归仓“赛项竞技赛全国三等奖，操作技能挑战赛全国二等奖，参赛机器人后续还获2024年中国大学生机械工程创新创意大赛全国三等奖与长三角赛区一等奖。",
         "timeline_4_date": "2023.9",
         "timeline_4_title": "“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛",
         "timeline_4_desc": "设计的“未来停车场智能充电系统”项目受彼欧集团(OPmobility)和SoScience邀请赴法国巴黎参加“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛展示。",
