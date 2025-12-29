@@ -185,7 +185,7 @@ const translations = {
         "timeline_5_desc": "Won National 3rd Prize, Regional 1st Prize, and Shanghai Municipal 1st Prize, along with multiple other provincial and university-level awards.",
         
         "year_end_summary_title": "Year-end Summary",
-        "year_end_summary_tba": "2025 Photography Summary (To Be Released)",
+        "year_end_summary_2025_caption": "2025 Photography Summary",
         "year_end_summary_caption": "2024 Photography Summary",
 
         "contact_title": "Contact",
@@ -377,7 +377,7 @@ const translations = {
         "timeline_5_desc": "设计的“未来停车场智能充电系统”项目获得全国三等奖与长三角赛区一等奖，此前还获得第十二届上海市大学生机械工程创新大赛一等奖等多项省部级与校级奖项。",
         
         "year_end_summary_title": "年终总结",
-        "year_end_summary_tba": "2025年摄影总结（待发布）",
+        "year_end_summary_2025_caption": "2025年摄影总结",
         "year_end_summary_caption": "2024年摄影总结",
 
         "contact_title": "联系方式",
