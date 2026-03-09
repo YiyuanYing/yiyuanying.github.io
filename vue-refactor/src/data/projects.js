@@ -1,4 +1,28 @@
 export const projects = {
+    6: {
+        titleKey: 'project_6_title',
+        descKey: 'project_6_desc',
+        detailKey: 'project_6_detail',
+        cardImage: '/images/robocon-2026-1.jpg',
+        mainImage: '/images/robocon-2026-1.jpg',
+        layout: [
+            {
+                type: 'image-row',
+                items: [
+                    {
+                        src: '/images/robocon-2026-2.gif',
+                        captionKey: 'project_6_img1_caption',
+                        itemStyle: 'max-width: 90%;',
+                        style: 'width: 90%; margin: 0 auto; display: block;'
+                    }
+                ]
+            },
+            {
+                type: 'html',
+                contentKey: 'project_6_detail_2'
+            }
+        ]
+    },
     1: {
         titleKey: 'project_1_title',
         descKey: 'project_1_desc',

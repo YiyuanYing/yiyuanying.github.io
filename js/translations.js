@@ -1,6 +1,7 @@
 const translations = {
     "en": {
         "page_title_home": "Yiyuan Ying | Personal Homepage",
+        "page_title_project6": "ROBOCON2026 - Quadruped & Kung Fu Quest",
         "page_title_project1": "ROBOCON2025 - Robot Basketball",
         "page_title_project2": "ROBOCON2024 - Harvest Day",
         "page_title_project3": "Multimodal Robot Perception & Interaction",
@@ -28,6 +29,22 @@ const translations = {
         "project_view_details": "View Details",
         "back_to_projects": "Back",
         "project_open_source": "Open Source CAD",
+        "project_6_title": "ROBOCON2026-Quadruped & Kung Fu Quest",
+        "project_6_desc": "As the mechanical group leader of the SUSTech ARES team's quadruped track, designed the 12-DOF bionic quadruped robot for the competition, and also participated in the structural design of the main competition robot.",
+        "project_6_detail": `
+            <p>The bionic quadruped track of the 2026 ROBOCON competition requires participating teams to design a quadruped robot capable of completing an obstacle course within a specified time.</p>
+            <p>As the mechanical group leader of the SUSTech ARES team's quadruped track, I was primarily responsible for the complete mechanical structure design and iteration of the 12-DOF quadruped robot used for the competition. During the research and development process, I conducted multiple rounds of iterations on the robot's leg configuration and transmission system. Ultimately, a series leg configuration was adopted, and a four-bar linkage transmission mechanism with a reduction ratio of approximately 1.67 was designed for the knee joint.</p>
+            <p>The entire robot is driven by Lingzu Technology RS02 motors, and the core structural components are precision-machined from full aluminum alloy using CNC. This ensures structural strength while also achieving lightweight design, successfully controlling the overall weight of the robot to around 11kg.</p>
+        `,
+        "project_6_img1_caption": "Quadruped Robot's First Unprotected Stand-up",
+        "project_6_detail_2": `
+            <p>The 2026 ROBOCON "Kung Fu Quest" main track required robots to complete complex tasks under extremely high dynamic and collaborative standards within a time limit, including precise docking of weapon head poles, traversing the complex stepping terrain of the "Plum Blossom Poles" (Meilin), and cooperative peg-in-hole tasks in the "KFS" 3x3 grid using two robots.</p>
+            <p>As a core mechanical member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the participating robot (R2). My main contributions are as follows:</p>
+            <ul>
+                <li><strong>Chassis and Lightweight Swivel Wheel Design:</strong> To meet the demanding mobility requirements on the complex terrain of the arena, I led the design of a small, lightweight swivel wheel exclusively for the R2 robot, keeping the single-wheel weight below 700g through a compact structural layout. Meanwhile, to solve the chassis interference problem when crossing the "Plum Blossom Poles" area, I innovatively developed a chassis architecture equipped with an active lifting suspension, greatly enhancing the robot's obstacle-crossing capability and moving posture stability.</li>
+                <li><strong>Four-Degree-of-Freedom Robotic Arm Design:</strong> Responsible for the design of the R2 robot's prop-grasping mechanism to achieve rapid and precise interaction with weapon heads and "KFS" props. To effectively reduce the terminal inertia of the robotic arm during high-speed movement and optimize the overall center of gravity, a configuration utilizing bottom-mounted motors paired with a four-bar linkage transmission was employed. While ensuring a four-degree-of-freedom workspace, this design significantly improved response speed and control precision during highly dynamic grasping operations.</li>
+            </ul>
+        `,
         "project_1_title": "ROBOCON2025-Robot Basketball",
         "project_1_desc": "As the technical consultant for the ECUST 'Wu Er' team, designed the steering wheel structure and shooting mechanism for the competition robot.",
         "project_1_detail": `
@@ -193,6 +210,7 @@ const translations = {
     },
     "zh": {
         "page_title_home": "应一源 | 个人主页",
+        "page_title_project6": "ROBOCON2026 - 仿生足式&武林探秘",
         "page_title_project1": "ROBOCON2025 - 飞身上篮",
         "page_title_project2": "ROBOCON2024 - 颗粒归仓",
         "page_title_project3": "多模态机器人感知与交互",
@@ -220,6 +238,22 @@ const translations = {
         "project_view_details": "查看详情",
         "back_to_projects": "返回",
         "project_open_source": "开源图纸",
+        "project_6_title": "ROBOCON2026-仿生足式&武林探秘",
+        "project_6_desc": "作为南方科技大学ARES战队四足赛道的机械组组长，设计了用于参赛的12自由度四足机器人，同时也参与了主赛参赛机器人的结构设计。",
+        "project_6_detail": `
+            <p>2026年的ROBOCON赛事的仿生足式赛道要求参赛队设计能够在规定时间内完成障碍赛的四足机器人。</p>
+            <p>作为南方科技大学ARES战队四足赛道的机械负责人，我主要负责参赛12自由度四足机器人的全套机械结构设计与迭代工作。在研发过程中，我针对机器人的腿部构型与传动系统进行了多轮迭代，最终确定了串联腿构型，并在膝关节处设计了减速比约为1.67的四连杆传动机构。</p>
+            <p>整机采用灵足时代RS02电机驱动，核心结构件均使用全铝合金CNC精密加工，在保证结构强度的同时兼顾了轻量化，最终将整台机器人的重量成功控制在11kg左右。</p>
+        `,
+        "project_6_img1_caption": "四足机器人首次无保护起立",
+        "project_6_detail_2": `
+            <p>2026年ROBOCON“武林探秘”主赛道要求机器人在极高的动态与协同标准下，限时完成武器头杆的精准对接、跨越“梅林”复杂阶梯地形，以及双车配合下的“KFS”九宫格抓放等复合任务。</p>
+            <p>作为南方科技大学ARES战队主赛的核心机械成员，我参与了参赛机器人（R2）关键执行机构的研发与迭代，主要贡献如下：</p>
+            <ul>
+                <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对机动性的苛刻要求，主导设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单轮重量极限控制在700g以内。同时，为解决跨越“梅林”区域时的底盘干涉问题，创新性地开发了搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
+                <li><strong>四自由度机械臂设计：</strong> 负责R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的快速、精准交互。为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
+            </ul>
+        `,
         "project_1_title": "ROBOCON2025-飞身上篮",
         "project_1_desc": "作为华东理工大学“无贰”战队的技术顾问，设计了用于参赛机器人的舵轮结构与投篮机构。",
         "project_1_detail": `

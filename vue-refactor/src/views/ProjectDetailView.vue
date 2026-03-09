@@ -17,8 +17,8 @@
         
         <!-- Image Row -->
         <div v-if="block.type === 'image-row'" class="project-images-row" :class="block.class">
-            <div class="project-image-item" v-for="(img, imgIndex) in block.items" :key="imgIndex">
-                <img :src="img.src" @error="handleImageError" alt="Project Detail Image">
+            <div class="project-image-item" v-for="(img, imgIndex) in block.items" :key="imgIndex" :style="img.itemStyle">
+                <img :src="img.src" @error="handleImageError" alt="Project Detail Image" :style="img.style">
                 <p class="image-caption" v-if="img.captionKey">{{ t(img.captionKey) }}</p>
             </div>
         </div>
@@ -33,6 +33,11 @@
              <a v-for="(btn, btnIndex) in block.items" :key="btnIndex" :href="btn.url" target="_blank" class="btn-details">
                 <i :class="btn.icon"></i> <span>{{ t(btn.labelKey) }}</span>
              </a>
+        </div>
+
+        <!-- HTML Content -->
+        <div v-else-if="block.type === 'html'" class="project-content">
+            <div v-html="t(block.contentKey)"></div>
         </div>
 
     </div>
