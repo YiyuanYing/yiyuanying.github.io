@@ -23,8 +23,8 @@ const t = (key) => {
 
 const pdfUrl = computed(() => {
     return props.currentLang === 'zh' 
-        ? 'https://yiyuanying.github.io/MyResume/resume_cn.pdf' 
-        : 'https://yiyuanying.github.io/MyResume/resume_en.pdf';
+        ? '/files/resume_cn_public.pdf' 
+        : '/files/resume_en_public.pdf';
 });
 </script>
 

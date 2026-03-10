@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentSrc = cvViewer.getAttribute('src');
             let newSrc = '';
             if (lang === 'zh') {
-                newSrc = 'https://yiyuanying.github.io/MyResume/resume_cn.pdf';
+                newSrc = 'files/resume_cn_public.pdf';
             } else {
-                newSrc = 'https://yiyuanying.github.io/MyResume/resume_en.pdf';
+                newSrc = 'files/resume_en_public.pdf';
             }
             
             if (currentSrc !== newSrc) {
@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (downloadBtn) {
              if (lang === 'zh') {
-                downloadBtn.href = 'https://yiyuanying.github.io/MyResume/resume_cn.pdf';
+                downloadBtn.href = 'files/resume_cn_public.pdf';
             } else {
-                downloadBtn.href = 'https://yiyuanying.github.io/MyResume/resume_en.pdf';
+                downloadBtn.href = 'files/resume_en_public.pdf';
             }
         }
     }
