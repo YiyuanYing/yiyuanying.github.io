@@ -1,0 +1,58 @@
+\section{2023 未来停车场智能充电系统设计开发}
+
+设计开发了一种基于二维移动机构的新型智能充电系统，大幅提升充电效率。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{project5-1.jpg}
+\end{figure}
+
+针对新能源汽车保有量激增与固定充电桩数量不足的矛盾，以及现有“一桩一位”模式导致的燃油车占位、充电完成不挪车等资源浪费问题，本项目开发了一套基于二维移动导轨的自动化配电系统，旨在实现“一桩多位”的高效电力调度。
+
+\textbf{主要技术方案与创新点：}
+
+\textbf{1. 机械结构：二维移动配电与功能模块}
+\begin{itemize}
+    \item \textbf{二维导轨移动机构：}摒弃了传统的固定式或一维移动方案，设计了基于皮带传动机构的XY轴二维移动平台。该机构结合超声波传感模块进行位置感知，通过控制步进电机实现配电装置在停车场顶部的精准二维定位，大幅扩大了充电覆盖范围。
+    \item \textbf{配电模块（齿轮继电结构）：}核心配电单元采用齿轮带动齿条的机械继电结构。通过齿轮转动驱动两侧齿条反向移动，带动受电弓与电网接触。相比传统电磁继电器，该机械结构在高电压、大功率传输下具有更高的稳定性和安全性。非工作状态下，受电弓自动回收进入绝缘外壳，确保安全。
+    \item \textbf{集成清洁模块：}在移动底座集成了剪叉式伸缩结构与吸尘装置。系统利用充电间隙，通过丝杆控制X轴、剪叉结构控制Y轴，自动对车辆底盘进行除尘清洁，实现了功能的复合利用。
+\end{itemize}
+
+\textbf{2. 控制系统架构}
+\begin{itemize}
+    \item 使用Raspberry Pi 4B作为边缘服务器，负责与云端通信、接收用户指令及运行调度算法；使用Arduino Mega 2560配合TB6600驱动器控制步进电机，执行具体的运动逻辑。
+    \item Arduino与树莓派之间通过LoRa模块进行低功耗远距离传输；树莓派通过Wi-Fi与MySQL云数据库交互，实现用户小程序端与硬件端的实时数据同步。
+\end{itemize}
+
+\textbf{3. 算法优化：基于优先级的时域调度}
+\begin{itemize}
+    \item 基于采集的真实停车与充电数据（包括SOC、停留时长等），对充电需求进行聚类分析与缺口判断。
+    \item 借鉴操作系统进程调度思想，设计了一套充电流程时域优化算法。系统根据车辆当前的SOC、预计离场时间计算动态优先级。
+    \begin{itemize}
+        \item 优先满足“急需充电”车辆（优先级$\leq$0），对非紧急需求进行延后处理，实现智能排序。
+        \item 仿真结果显示，该算法有效实现了“削峰填谷”。应用后，场站峰值充电功率降低了55.56\%，充电桩的综合利用率提升了约2.5倍（从11.99\%提升至29.98\%）。
+    \end{itemize}
+\end{itemize}
+
+项目完成了包含皮带传动、齿轮继电配电、清洁模块在内的完整二代样机制造与调试，验证了机械结构的合理性与控制系统的稳定性。同时开发了配套的微信小程序，实现了车位预约、充电状态监控及费用结算的完整闭环。
+
+项目获得2023年中国大学生机械工程创新创意大赛全国三等奖与长三角赛区一等奖、第十二届上海市大学生机械工程创新大赛一等奖等多项国家级、省部级与校级奖项。此外，项目还获得彼欧集团认可，受邀参加了2023年9月在法国巴黎由彼欧集团（OPmobility）与SoScience举办的“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛展示。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{project5-2.jpg}
+    \caption*{项目前期数据分析}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{project5-3.jpg}
+    \caption*{项目机械结构示意图}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{project5-4.jpg}
+\end{figure}
+
+附：项目文件 \url{../files/project5-1.pdf}

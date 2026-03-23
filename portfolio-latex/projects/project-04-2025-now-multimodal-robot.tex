@@ -1,0 +1,37 @@
+\section{2025--至今 多模态机器人感知与交互系统的研究}
+
+设计了面向星表环境的机器人腿部结构，并基于强化学习实现了稳定高效的自主爬行控制。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{project3-1.jpg}
+\end{figure}
+
+\textbf{项目背景：}本项目为上海霄元创新中心合作项目，由易建军教授与陈李炜博士指导。旨在解决空间机器人在卫星太阳能帆板等复杂星表结构上的自主吸附与稳定爬行难题。
+
+\textbf{主要研究成果与技术创新：}
+
+\textbf{1. 多模态机器人机构创新设计}
+\begin{itemize}
+    \item \textbf{6-DOF仿生腿部结构：}针对航天器表面工作环境设计了兼具“机械臂操作”与“足式行走”功能的6自由度腿部，且可支持双足/多足构型切换。
+    \item \textbf{轻量化与模块化设计：}采用3D打印材料进行拓扑优化设计，配合达妙关节电机；机械臂末端支持轮式/足式/夹爪等多种末端执行器的快速更换。
+\end{itemize}
+
+\textbf{2. 融合模仿学习的强化学习控制框架 (RL + IL)}
+\begin{itemize}
+    \item \textbf{教师-学生策略：}构建了基于 PPO 与 SAC 算法的混合控制架构。教师策略通过在无噪声环境中采集示教数据,构建高质量轨迹,获得表现最优的动作序列,用以指导后续策略学习；学生策略通过与教师轨迹对齐并结合实际带噪声环境观测，学习出具有迁移性和泛化能力的策略模型。
+    \item \textbf{多重奖励融合机制 (RFM)：}算法核心融合了 PPO (Proximal Policy Optimization) 与 SAC (Soft Actor-Critic)，结合多重奖励融合机制（Reward Fusion Mechanism, RFM），在奖励函数中动态平衡了足端稳定性、全身姿态、能耗及轨迹跟踪精度。
+    \item 验证了机器人能够在仅依赖本体感知（Proprioception）和带噪声观测的情况下，在太阳能帆板边缘实现稳定的自主爬行。
+\end{itemize}
+
+机器人成功在仿真及物理模拟环境中习得了针对柔性太阳能帆板的稳定爬行步态，证明了该具身智能框架在微重力等复杂地外环境下的有效性。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{project3-2.jpg}
+    \caption*{机器人算法框架}
+\end{figure}
+
+附：项目文件 \url{../files/project3-1.pdf}
+
+代码链接：\url{https://github.com/YiyuanYing/robot_lab}

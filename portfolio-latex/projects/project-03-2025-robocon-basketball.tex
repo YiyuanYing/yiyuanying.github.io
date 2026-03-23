@@ -1,0 +1,70 @@
+\section{2025 ROBOCON2025-飞身上篮}
+
+作为华东理工大学“无贰”战队的技术顾问，设计了用于参赛机器人的舵轮结构与投篮机构。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{robocon-2025-1.jpg}
+\end{figure}
+
+2025年的ROBOCON赛事的主题为“飞身上篮”，要求参赛队设计能够在规定时间内完成运球与投篮任务的机器人。
+
+作为华东理工大学“无贰”战队的技术顾问，我主要负责参赛机器人的机械结构设计与指导工作。
+
+主要贡献包括：
+\begin{itemize}
+    \item \textbf{舵轮模组：}在备赛周期中迭代设计了两套舵轮轮组方案。
+    \begin{itemize}
+        \item \textbf{方案一：}采用DM6220中空电机实现直驱转向，配合定制减速箱的DJI M3508电机驱动轮毂，同时在舵向电机处加入交叉滚子轴承以提高轴向受力能力，相较于前两年参赛机器人中使用的麦轮底盘具备较高响应速度与运动速度；
+        \item \textbf{方案二：}基于内齿圈传动结构，利用无减速箱的DJI M3508配合内齿圈实现舵向转动，选用TMotor U8 Lite盘式无刷电机作为轮毂动力源，并配合DM100驱动与自制舵向磁编码器以完成闭环驱动，大幅提升了底盘移动速度，同时相较于DM6220+M3508舵轮方案能有效减重与提高能量密度。
+    \end{itemize}
+    \item \textbf{摩擦发射机构：}设计并对比了“三摩擦轮”与“三摩擦带”两种发射机构。经多次发射测试分析，摩擦轮方案存在球体接触面积小导致的散布过大与加速不一致问题，最终采用了使用5065电机配合VESC驱动的三摩擦带发射方案，显著提升了投篮时出射的速度与方向均一性。
+    \item \textbf{运球机构：}开发了配合Z轴升降的气动夹爪与摩擦轮两套运球机构。后续在赛场时的测试发现，由于场地地面平整度与回弹的原因，气缸夹爪的效果并不理想。
+\end{itemize}
+
+两台机器人有着较为明确的分工：一台可完整运球到投篮的全流程，另一台则可快速更换上部结构，并配合动力更强的U8舵轮，以分别完成运球赛与竞技赛中防守的任务需求。
+
+团队在2025年ROBOCON江阴赛区中获“飞身上篮”赛项\textbf{竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖}。此前参加了2025年5月于华南理工大学举办的2025年ROBOCON全国交流赛并获得“飞身上篮”赛项交流赛\textbf{全国二等奖与最佳技术奖}。此后以其中一台机器人为主体的“青出于篮——智能化篮球训练平台”项目获得2025年中国大学生机械工程创新创意大赛\textbf{全国二等奖与长三角赛区一等奖}。
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{robocon-2025-2.jpg}
+        \caption*{DM6220+M3508舵轮轮组}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{robocon-2025-3.jpg}
+        \caption*{M3508+U8 Lite舵轮轮组}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{robocon-2025-4.jpg}
+        \caption*{比赛中的R1机器人}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{robocon-2025-5.jpg}
+        \caption*{比赛中的R2机器人}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{robocon-2025-6.jpg}
+    \caption*{2025赛季华东理工大学”无贰“战队队员合影}
+\end{figure}
+
+相关链接：
+\begin{itemize}
+    \item 演示视频1：\url{https://www.bilibili.com/video/BV1nH3vzLEgy/?share_source=copy_web&vd_source=1eb461f6bddf0bc2f2101474c44a8a70}
+    \item 演示视频2：\url{https://www.bilibili.com/video/BV1UR3EzmEBr/?share_source=copy_web&vd_source=1eb461f6bddf0bc2f2101474c44a8a70}
+    \item 开源图纸：\url{https://pan.baidu.com/s/1Ki5ZXS8XCjCsn4owYrJ4ag?pwd=te4j}
+\end{itemize}
