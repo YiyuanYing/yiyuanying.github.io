@@ -34,15 +34,16 @@ const translations = {
         "project_6_detail": `
             <p>The bionic quadruped track of the 2026 ROBOCON competition requires participating teams to design a quadruped robot capable of completing an obstacle course within a specified time.</p>
             <p>As the mechanical group leader of the SUSTech ARES team's quadruped track, I was primarily responsible for the complete mechanical structure design and iteration of the 12-DOF quadruped robot used for the competition. During the research and development process, I conducted multiple rounds of iterations on the robot's leg configuration and transmission system. Ultimately, a series leg configuration was adopted, and a four-bar linkage transmission mechanism with a reduction ratio of approximately 1.67 was designed for the knee joint.</p>
-            <p>The entire robot is driven by Lingzu Technology RS02 motors, and the core structural components are precision-machined from full aluminum alloy using CNC. This ensures structural strength while also achieving lightweight design, successfully controlling the overall weight of the robot to around 11kg.</p>
+            <p>The entire robot is driven by Lingzu Technology RS02 motors, and the core structural components are CNC-machined aluminum alloy parts, supplemented with carbon fiber plates for structural reinforcement. This ensures structural strength while achieving a lightweight design, successfully controlling the overall weight of the robot to around 11kg.</p>
         `,
         "project_6_img1_caption": "Quadruped Robot's First Unprotected Stand-up",
+        "project_6_img2_caption": "Small steering wheel module for the R2 robot (Left: wheel set mass without drive and slip ring, Right: mass of the lifting part of the active suspension module)",
         "project_6_detail_2": `
             <p>The 2026 ROBOCON "Kung Fu Quest" main track required robots to complete complex tasks under extremely high dynamic and collaborative standards within a time limit, including precise docking of weapon head poles, traversing the complex stepping terrain of the "Plum Blossom Poles" (Meilin), and cooperative peg-in-hole tasks in the "KFS" 3x3 grid using two robots.</p>
-            <p>As a core mechanical member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the participating robot (R2). My main contributions are as follows:</p>
+            <p>As a mechanical team member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the R2 robot. My main contributions are as follows:</p>
             <ul>
-                <li><strong>Chassis and Lightweight Swivel Wheel Design:</strong> To meet the demanding mobility requirements on the complex terrain of the arena, I led the design of a small, lightweight swivel wheel exclusively for the R2 robot, keeping the single-wheel weight below 700g through a compact structural layout. Meanwhile, to solve the chassis interference problem when crossing the "Plum Blossom Poles" area, I innovatively developed a chassis architecture equipped with an active lifting suspension, greatly enhancing the robot's obstacle-crossing capability and moving posture stability.</li>
-                <li><strong>Four-Degree-of-Freedom Robotic Arm Design:</strong> Responsible for the design of the R2 robot's prop-grasping mechanism to achieve rapid and precise interaction with weapon heads and "KFS" props. To effectively reduce the terminal inertia of the robotic arm during high-speed movement and optimize the overall center of gravity, a configuration utilizing bottom-mounted motors paired with a four-bar linkage transmission was employed. While ensuring a four-degree-of-freedom workspace, this design significantly improved response speed and control precision during highly dynamic grasping operations.</li>
+                <li><strong>Chassis and Lightweight Steering Wheel Design:</strong> To meet the terrain-crossing capability requirements on the complex arena terrain, I designed a small, lightweight steering wheel exclusively for the R2 robot, keeping the single steering wheel module's weight at around 700g through a compact structural layout. Meanwhile, to solve the terrain-crossing problem in the "Plum Blossom Poles" area, I participated in the development of a chassis architecture equipped with an active lifting suspension, greatly enhancing the robot's obstacle-crossing capability and posture stability.</li>
+                <li><strong>Four-Degree-of-Freedom Robotic Arm Design:</strong> Responsible for the design of the first-generation R2 robot's prop-grasping mechanism to achieve grasping and precise docking with weapon heads and "KFS" props. To effectively reduce the terminal inertia of the robotic arm during high-speed movement and optimize the overall center of gravity, a configuration utilizing bottom-mounted motors paired with a four-bar linkage transmission was employed. While ensuring a four-degree-of-freedom workspace, this design significantly improved response speed and control precision during highly dynamic grasping operations.</li>
             </ul>
         `,
         "project_1_title": "ROBOCON2025-Robot Basketball",
@@ -243,15 +244,16 @@ const translations = {
         "project_6_detail": `
             <p>2026年的ROBOCON赛事的仿生足式赛道要求参赛队设计能够在规定时间内完成障碍赛的四足机器人。</p>
             <p>作为南方科技大学ARES战队四足赛道的机械负责人，我主要负责参赛12自由度四足机器人的全套机械结构设计与迭代工作。在研发过程中，我针对机器人的腿部构型与传动系统进行了多轮迭代，最终确定了串联腿构型，并在膝关节处设计了减速比约为1.67的四连杆传动机构。</p>
-            <p>整机采用灵足时代RS02电机驱动，核心结构件均使用全铝合金CNC精密加工，在保证结构强度的同时兼顾了轻量化，最终将整台机器人的重量成功控制在11kg左右。</p>
+            <p>整机采用灵足时代RS02电机驱动，核心结构件均使用铝合金CNC加工件，辅以碳纤维板进行结构强化，在保证结构强度的同时兼顾了轻量化，最终将整台机器人的重量成功控制在11kg左右。</p>
         `,
         "project_6_img1_caption": "四足机器人首次无保护起立",
+        "project_6_img2_caption": "用于R2机器人的小型舵轮模组（左图为不包含驱动和滑环的轮组质量，右图为主动悬挂模组升降部分的质量）",
         "project_6_detail_2": `
             <p>2026年ROBOCON“武林探秘”主赛道要求机器人在极高的动态与协同标准下，限时完成武器头杆的精准对接、跨越“梅林”复杂阶梯地形，以及双车配合下的“KFS”九宫格抓放等复合任务。</p>
-            <p>作为南方科技大学ARES战队主赛的核心机械成员，我参与了参赛机器人（R2）关键执行机构的研发与迭代，主要贡献如下：</p>
+            <p>作为南方科技大学ARES战队主赛机械组成员，我参与了R2机器人关键执行机构的研发与迭代，主要贡献如下：</p>
             <ul>
-                <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对机动性的苛刻要求，主导设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单轮重量极限控制在700g以内。同时，为解决跨越“梅林”区域时的底盘干涉问题，创新性地开发了搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
-                <li><strong>四自由度机械臂设计：</strong> 负责R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的快速、精准交互。为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
+                <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对地形跨越能力的要求，设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单舵轮模组轮重量控制在700g左右。同时，为解决“梅林”区域地形跨越问题，参与开发了一型搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
+                <li><strong>四自由度机械臂设计：</strong> 负责一代R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的抓取、对接等动作；为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
             </ul>
         `,
         "project_1_title": "ROBOCON2025-飞身上篮",
