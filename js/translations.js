@@ -46,6 +46,9 @@ const translations = {
                 <li><strong>Four-Degree-of-Freedom Robotic Arm Design:</strong> Responsible for the design of the first-generation R2 robot's prop-grasping mechanism to achieve grasping and precise docking with weapon heads and "KFS" props. To effectively reduce the terminal inertia of the robotic arm during high-speed movement and optimize the overall center of gravity, a configuration utilizing bottom-mounted motors paired with a four-bar linkage transmission was employed. While ensuring a four-degree-of-freedom workspace, this design significantly improved response speed and control precision during highly dynamic grasping operations.</li>
             </ul>
         `,
+        "project_6_detail_3": `
+            <p>In addition, I also participated in the overall team management and operations during the 2025-2026 season, including recruitment presentations, training sessions, and recruitment interviews, as well as multiple technical exchange activities with teams from other universities during the winter annual meeting period.</p>
+        `,
         "project_1_title": "ROBOCON2025-Robot Basketball",
         "project_1_desc": "As the technical consultant for the ECUST 'Wu Er' team, designed the steering wheel structure and shooting mechanism for the competition robot.",
         "project_1_detail": `
@@ -255,6 +258,9 @@ const translations = {
                 <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对地形跨越能力的要求，设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单舵轮模组轮重量控制在700g左右。同时，为解决“梅林”区域地形跨越问题，参与开发了一型搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
                 <li><strong>四自由度机械臂设计：</strong> 负责一代R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的抓取、对接等动作；为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
             </ul>
+        `,
+        "project_6_detail_3": `
+            <p>此外，还参与了 25-26 赛季队伍的整体管理与运营工作，参与组织招新宣讲、培训与招新面试等运营工作，以及寒假年会期间多次与其他学校队伍的技术交流活动。</p>
         `,
         "project_1_title": "ROBOCON2025-飞身上篮",
         "project_1_desc": "作为华东理工大学“无贰”战队的技术顾问，设计了用于参赛机器人的舵轮结构与投篮机构。",
