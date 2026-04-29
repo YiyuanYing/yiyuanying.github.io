@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title_cv">CV | Yiyuan Ying</title>
+    <title data-i18n="page_title_summary">Year-end Summary | Yiyuan Ying</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .cv-container {
+        .summary-page {
             max-width: 1000px;
+            margin-bottom: 0;
+        }
+
+        .summary-header {
             width: 100%;
-            background: var(--card-bg);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            height: 85vh;
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 28px;
         }
-        .cv-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+
         .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             color: var(--accent-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
-        .download-btn {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        iframe {
-            flex-grow: 1;
+
+        .summary-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
             width: 100%;
-            border: none;
-            border-radius: 5px;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-item img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .summary-item p {
+            margin-top: 10px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -61,8 +67,8 @@
                 <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
                 <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
                 <li><a href="index.html#timeline" data-i18n="nav_timeline">Timeline</a></li>
-                <li><a href="summary.html" data-i18n="nav_summary">Summary</a></li>
-                <li><a href="cv.html" class="active" data-i18n="nav_cv">CV</a></li>
+                <li><a href="summary.html" class="active" data-i18n="nav_summary">Summary</a></li>
+                <li><a href="cv.html" data-i18n="nav_cv">CV</a></li>
             </ul>
         </nav>
 
@@ -73,13 +79,25 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="cv-container">
-            <div class="cv-header">
-                <a href="index.html" class="back-btn">← <span data-i18n="back_home">Back to Home</span></a>
-                <a id="download-cv-btn" href="#" class="download-btn" target="_blank" data-i18n="download_cv">Download PDF</a>
+        <section id="year-end-summary" class="summary-page">
+            <div class="summary-header">
+                <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> <span data-i18n="back_home">Back to Home</span></a>
             </div>
-            <iframe id="cv-viewer" src=""></iframe>
-        </div>
+
+            <h2 data-i18n="year_end_summary_title">Year-end Summary</h2>
+
+            <div class="summary-gallery">
+                <div class="summary-item">
+                    <img src="images/2025final.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="2025 Year-end Summary">
+                    <p data-i18n="year_end_summary_2025_caption">2025 Photography Summary</p>
+                </div>
+
+                <div class="summary-item">
+                    <img src="images/2024final.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="2024 Year-end Summary">
+                    <p data-i18n="year_end_summary_caption">2024 Photography Summary</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Language Toggle Logic ---
+    // --- Language Rendering Logic ---
     const langToggleBtn = document.getElementById('lang-toggle');
-    let currentLang = localStorage.getItem('lang') || 'en';
+    const defaultLang = 'zh';
+    let currentLang = langToggleBtn ? (localStorage.getItem('lang') || defaultLang) : defaultLang;
 
     // Initialize Language
     updateLanguage(currentLang);

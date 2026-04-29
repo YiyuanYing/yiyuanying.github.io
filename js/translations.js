@@ -1,6 +1,7 @@
 const translations = {
     "en": {
         "page_title_home": "Yiyuan Ying | Personal Homepage",
+        "page_title_projects": "Projects | Yiyuan Ying",
         "page_title_project6": "ROBOCON2026 - Quadruped & Kung Fu Quest",
         "page_title_project1": "ROBOCON2025 - Robot Basketball",
         "page_title_project2": "ROBOCON2024 - Harvest Day",
@@ -8,6 +9,7 @@ const translations = {
         "page_title_project4": "Research on Space Target Situational Awareness and Evaluation",
         "page_title_project5": "Development of Intelligent Charging System for Future Parking Lots",
         "page_title_cv": "CV | Yiyuan Ying",
+        "page_title_summary": "Year-end Summary | Yiyuan Ying",
         "name": "Yiyuan Ying",
         // "role": "Master Student",
         // "university": "<p>SUSTech</p><p>(Southern University of Science and Technology)</p>",
@@ -214,6 +216,7 @@ const translations = {
     },
     "zh": {
         "page_title_home": "应一源 | 个人主页",
+        "page_title_projects": "项目经历 | 应一源",
         "page_title_project6": "ROBOCON2026 - 仿生足式&武林探秘",
         "page_title_project1": "ROBOCON2025 - 飞身上篮",
         "page_title_project2": "ROBOCON2024 - 颗粒归仓",
@@ -221,6 +224,7 @@ const translations = {
         "page_title_project4": "空间目标态势感知、博弈与评估方法的研究",
         "page_title_project5": "未来停车场智能充电系统设计开发",
         "page_title_cv": "简历 | 应一源",
+        "page_title_summary": "年终总结 | 应一源",
         "name": "应一源",
         // "role": "硕士研究生",
         "university": "南方科技大学",

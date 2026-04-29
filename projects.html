@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title_projects">Projects | Yiyuan Ying</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .projects-page {
+            max-width: 1100px;
+            margin-bottom: 0;
+        }
+
+        .projects-page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .projects-page-header h2 {
+            margin-bottom: 0;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .project-list-card {
+            display: flex;
+            align-items: stretch;
+            height: 270px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .project-list-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(49, 130, 206, 0.35);
+        }
+
+        .project-list-media {
+            flex: 0 0 38%;
+            min-width: 280px;
+            height: 100%;
+            overflow: hidden;
+            background: var(--bg-color);
+        }
+
+        .project-list-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+        }
+
+        .project-list-body {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            min-width: 0;
+            padding: 32px;
+        }
+
+        .project-list-copy {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+            min-width: 0;
+            text-align: left;
+            transform: translateY(-10px);
+        }
+
+        .project-list-copy h3 {
+            margin: 0;
+            font-size: 1.35rem;
+            line-height: 1.35;
+        }
+
+        .project-list-copy p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .project-list-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 2px;
+            padding: 11px 28px;
+            min-width: 132px;
+            min-height: 46px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: transform 0.25s ease, color 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .project-list-action:hover {
+            transform: translateY(-3px);
+            color: var(--accent-color);
+            background: rgba(49, 130, 206, 0.1);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .projects-page-header {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+            }
+
+            .project-list-card {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .project-list-media {
+                flex: none;
+                width: 100%;
+                min-width: 0;
+                height: 210px;
+            }
+
+            .project-list-body {
+                padding: 24px;
+            }
+
+            .project-list-copy {
+                transform: none;
+            }
+
+            .project-list-copy h3 {
+                font-size: 1.18rem;
+            }
+
+            .project-list-copy p {
+                -webkit-line-clamp: 5;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="brand-link">
+                <img src="images/profile.jpg" alt="Profile Photo" class="nav-profile-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/150'">
+                <h1 data-i18n="name">Yiyuan Ying</h1>
+            </a>
+        </div>
+
+        <nav class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="projects.html" class="active" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="index.html#timeline" data-i18n="nav_timeline">Timeline</a></li>
+                <li><a href="summary.html" data-i18n="nav_summary">Summary</a></li>
+                <li><a href="cv.html" data-i18n="nav_cv">CV</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <button id="theme-toggle" class="btn-icon"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="projects-page">
+            <div class="projects-page-header">
+                <h2 data-i18n="projects_title">Projects</h2>
+                <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> <span data-i18n="back_home">Back to Home</span></a>
+            </div>
+
+            <div class="project-list">
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/robocon-2026-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 6">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_6_title">ROBOCON2026-Quadruped &amp; Kung Fu Quest</h3>
+                            <p data-i18n="project_6_desc">As the mechanical group leader of the SUSTech ARES team's quadruped track, designed the 12-DOF bionic quadruped robot for the competition, and also participated in the structural design of the main competition robot.</p>
+                            <a href="project6.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/robocon-2025-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 1">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_1_title">Project Title 1</h3>
+                            <p data-i18n="project_1_desc">Brief description of project 1.</p>
+                            <a href="project1.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/robocon-2024-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 2">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_2_title">Project Title 2</h3>
+                            <p data-i18n="project_2_desc">Brief description of project 2.</p>
+                            <a href="project2.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/project3-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 3">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_3_title">Project Title 3</h3>
+                            <p data-i18n="project_3_desc">Brief description of project 3.</p>
+                            <a href="project3.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/project4-2.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 4">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_4_title">Project Title 4</h3>
+                            <p data-i18n="project_4_desc">Brief description of project 4.</p>
+                            <a href="project4.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-card">
+                    <figure class="project-list-media">
+                        <img src="images/project5-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x260'" alt="Project 5">
+                    </figure>
+                    <div class="project-list-body">
+                        <div class="project-list-copy">
+                            <h3 data-i18n="project_5_title">Project Title 5</h3>
+                            <p data-i18n="project_5_desc">Brief description of project 5.</p>
+                            <a href="project5.html" class="project-list-action"><span data-i18n="project_view_details">View Details</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://github.com/YiyuanYing" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:yiyuanying@outlook.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2021-2025 Verso_X | Yiyuan Ying
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
