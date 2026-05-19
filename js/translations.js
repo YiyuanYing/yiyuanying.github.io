@@ -39,7 +39,8 @@ const translations = {
             <p>The entire robot is driven by Lingzu Technology RS02 motors, and the core structural components are CNC-machined aluminum alloy parts, supplemented with carbon fiber plates for structural reinforcement. This ensures structural strength while achieving a lightweight design, successfully controlling the overall weight of the robot to around 11kg.</p>
         `,
         "project_6_img1_caption": "Quadruped Robot's First Unprotected Stand-up",
-        "project_6_img2_caption": "Small steering wheel module for the R2 robot (Left: wheel set mass without drive and slip ring, Right: mass of the lifting part of the active suspension module)",
+        "project_6_img2_caption": "Lightweight lifting steering wheel module for the main-track R2 robot (about 660g without drive and slip ring, about 1080g including drive, slip ring, and lifting structure)",
+        "project_6_img3_caption": "Quadruped robot climbs stairs using reinforcement learning policy",
         "project_6_detail_2": `
             <p>The 2026 ROBOCON "Kung Fu Quest" main track required robots to complete complex tasks under extremely high dynamic and collaborative standards within a time limit, including precise docking of weapon head poles, traversing the complex stepping terrain of the "Plum Blossom Poles" (Meilin), and cooperative peg-in-hole tasks in the "KFS" 3x3 grid using two robots.</p>
             <p>As a mechanical team member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the R2 robot. My main contributions are as follows:</p>
@@ -251,16 +252,18 @@ const translations = {
         "project_6_detail": `
             <p>2026年的ROBOCON赛事的仿生足式赛道要求参赛队设计能够在规定时间内完成障碍赛的四足机器人。</p>
             <p>作为南方科技大学ARES战队四足赛道的机械负责人，我主要负责参赛12自由度四足机器人的全套机械结构设计与迭代工作。在研发过程中，我针对机器人的腿部构型与传动系统进行了多轮迭代，最终确定了串联腿构型，并在膝关节处设计了减速比约为1.67的四连杆传动机构。</p>
-            <p>整机采用灵足时代RS02电机驱动，核心结构件均使用铝合金CNC加工件，辅以碳纤维板进行结构强化，在保证结构强度的同时兼顾了轻量化，最终将整台机器人的重量成功控制在11kg左右。</p>
+            <p>整机采用灵足时代RS02电机驱动，核心结构件均使用铝合金CNC加工件，辅以碳纤维板进行结构强化，在保证结构强度的同时兼顾了轻量化，最终将整台机器人的重量成功控制在11.5kg左右。</p>
         `,
         "project_6_img1_caption": "四足机器人首次无保护起立",
-        "project_6_img2_caption": "用于R2机器人的小型舵轮模组（左图为不包含驱动和滑环的轮组质量，右图为主动悬挂模组升降部分的质量）",
+        "project_6_img2_caption": "用于主赛 R2 机器人的轻量化升降小舵轮模组(不含电驱及滑环约 660g，含电驱滑环和升降结构约 1080g)",
+        "project_6_img3_caption": "四足机器人使用强化学习策略上下台阶",
         "project_6_detail_2": `
             <p>2026年ROBOCON“武林探秘”主赛道要求机器人在极高的动态与协同标准下，限时完成武器头杆的精准对接、跨越“梅林”复杂阶梯地形，以及双车配合下的“KFS”九宫格抓放等复合任务。</p>
             <p>作为南方科技大学ARES战队主赛机械组成员，我参与了R2机器人关键执行机构的研发与迭代，主要贡献如下：</p>
             <ul>
                 <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对地形跨越能力的要求，设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单舵轮模组轮重量控制在700g左右。同时，为解决“梅林”区域地形跨越问题，参与开发了一型搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
                 <li><strong>四自由度机械臂设计：</strong> 负责一代R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的抓取、对接等动作；为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
+                <li><strong>二代R2机器人整机结构研发：</strong> 负责二代R2机器人的整机结构设计，在一代机器人的基础上针对主赛道的任务需求与赛场环境进行了针对性的优化迭代，沿用主动悬挂舵轮底盘的布置，更换使用三自由度机械臂以简化解算复杂度与提高抓取KFS效率。</li>
             </ul>
         `,
         "project_6_detail_3": `
