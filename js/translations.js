@@ -41,6 +41,7 @@ const translations = {
         "project_6_img1_caption": "Quadruped Robot's First Unprotected Stand-up",
         "project_6_img2_caption": "Lightweight lifting steering wheel module for the main-track R2 robot (about 660g without drive and slip ring, about 1080g including drive, slip ring, and lifting structure)",
         "project_6_img3_caption": "Quadruped robot climbs stairs using reinforcement learning policy",
+        "project_6_img4_caption": "First-generation R2 active suspension chassis automatically traversing terrain",
         "project_6_detail_2": `
             <p>The 2026 ROBOCON "Kung Fu Quest" main track required robots to complete complex tasks under extremely high dynamic and collaborative standards within a time limit, including precise docking of weapon head poles, traversing the complex stepping terrain of the "Plum Blossom Poles" (Meilin), and cooperative peg-in-hole tasks in the "KFS" 3x3 grid using two robots.</p>
             <p>As a mechanical team member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the R2 robot. My main contributions are as follows:</p>
@@ -257,6 +258,7 @@ const translations = {
         "project_6_img1_caption": "四足机器人首次无保护起立",
         "project_6_img2_caption": "用于主赛 R2 机器人的轻量化升降小舵轮模组(不含电驱及滑环约 660g，含电驱滑环和升降结构约 1080g)",
         "project_6_img3_caption": "四足机器人使用强化学习策略上下台阶",
+        "project_6_img4_caption": "一代R2主动悬挂底盘自动跨越地形",
         "project_6_detail_2": `
             <p>2026年ROBOCON“武林探秘”主赛道要求机器人在极高的动态与协同标准下，限时完成武器头杆的精准对接、跨越“梅林”复杂阶梯地形，以及双车配合下的“KFS”九宫格抓放等复合任务。</p>
             <p>作为南方科技大学ARES战队主赛机械组成员，我参与了R2机器人关键执行机构的研发与迭代，主要贡献如下：</p>
