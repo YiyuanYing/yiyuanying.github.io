@@ -43,14 +43,14 @@
         </div>
     </section>
 
-    <!-- Year-end Summary Section -->
+    <!-- Annual Photography Summary Section -->
     <section id="year-end-summary">
-        <h2>{{ t('year_end_summary_title') || 'Year-end Summary' }}</h2>
+        <h2>{{ t('year_end_summary_title') || 'Annual Photography Summary' }}</h2>
         <div style="text-align: center;">
-            <img src="/images/2025final.jpg" @error="handleImageError" alt="2025 Year-end Summary" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <img src="/images/2025final.jpg" @error="handleImageError" alt="2025 Annual Photography Summary" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
             <p style="margin-top: 10px; margin-bottom: 30px; color: var(--text-secondary); font-size: 0.95rem;">{{ t('year_end_summary_2025_caption') || '2025 Photography Summary' }}</p>
 
-            <img src="/images/2024final.jpg" @error="handleImageError" alt="2024 Year-end Summary" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <img src="/images/2024final.jpg" @error="handleImageError" alt="2024 Annual Photography Summary" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
             <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.95rem;">{{ t('year_end_summary_caption') || '2024 Photography Summary' }}</p>
         </div>
     </section>

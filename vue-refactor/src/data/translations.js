@@ -15,7 +15,7 @@ export const translations = {
         "nav_about": "About",
         "nav_projects": "Projects",
         "nav_timeline": "Timeline",
-        "nav_summary": "Summary",
+        "nav_summary": "Annual Photography Summary",
         "nav_cv": "CV",
         "back_home": "Back to Home",
         "download_cv": "Download PDF",
@@ -202,7 +202,7 @@ export const translations = {
         "timeline_5_title": "2023 China College Students Mechanical Engineering Innovation and Creativity Competition",
         "timeline_5_desc": "Won National 3rd Prize, Regional 1st Prize, and Shanghai Municipal 1st Prize, along with multiple other provincial and university-level awards.",
         
-        "year_end_summary_title": "Year-end Summary",
+        "year_end_summary_title": "Annual Photography Summary",
         "year_end_summary_2025_caption": "2025 Photography Summary",
         "year_end_summary_caption": "2024 Photography Summary",
 
@@ -224,7 +224,7 @@ export const translations = {
         "nav_about": "个人介绍",
         "nav_projects": "项目经历",
         "nav_timeline": "时间轴",
-        "nav_summary": "年终总结",
+        "nav_summary": "年度摄影总结",
         "nav_cv": "简历",
         "back_home": "返回主页",
         "download_cv": "下载 PDF",
@@ -412,7 +412,7 @@ export const translations = {
         "timeline_5_title": "2023年中国大学生机械工程创新创意大赛",
         "timeline_5_desc": "设计的“未来停车场智能充电系统”项目获得全国三等奖与长三角赛区一等奖，此前还获得第十二届上海市大学生机械工程创新大赛一等奖等多项省部级与校级奖项。",
         
-        "year_end_summary_title": "年终总结",
+        "year_end_summary_title": "年度摄影总结",
         "year_end_summary_2025_caption": "2025年摄影总结",
         "year_end_summary_caption": "2024年摄影总结",
 
