@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    try {
     // --- Language Rendering Logic ---
     const langToggleBtn = document.getElementById('lang-toggle');
     const defaultLang = 'zh';
@@ -101,5 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('theme', 'light-mode');
             }
         });
+    }
+    } finally {
+        document.documentElement.classList.remove('i18n-loading');
     }
 });

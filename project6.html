@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('i18n-loading');</script>
     <title data-i18n="page_title_project6">ROBOCON2026 - Quadruped &amp; Kung Fu Quest | Yiyuan Ying</title>
     <link rel="icon" type="image/jpeg" href="images/profile.jpg">
     <link rel="stylesheet" href="css/style.css">
@@ -130,13 +131,28 @@
             border-radius: 8px;
             border: 1px solid var(--border-color);
         }
-        .project-terrain-gif {
-            width: 100%;
-            max-width: 420px;
+        .project-team-photo {
+            width: 90%;
             height: auto;
             border-radius: 8px;
             border: 1px solid var(--border-color);
             margin-bottom: 10px;
+        }
+        .project-links-row {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 40px;
+        }
+        .project-links-row .btn-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            margin: 0;
+            padding: 12px 10px;
+            white-space: nowrap;
+            font-size: 0.95rem;
         }
         @media (max-width: 760px) {
             .project-module-images {
@@ -148,6 +164,9 @@
                 max-width: 100%;
                 height: auto;
                 max-height: 420px;
+            }
+            .project-links-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
     </style>
@@ -185,9 +204,19 @@
             
             <h2 data-i18n="project_6_title">ROBOCON2026-Quadruped &amp; Kung Fu Quest</h2>
             
-            <img src="images/robocon-2026-1.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="Project Image" class="project-detail-img">
+            <img src="images/robocon-2026-11.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="Project Image" class="project-detail-img">
             
             <div class="project-content">
+                <section class="season-awards" aria-labelledby="project-awards-title">
+                    <h3 id="project-awards-title">
+                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                        <span data-i18n="project_awards_title">项目获奖</span>
+                    </h3>
+                    <div data-i18n="project_6_awards">
+                        <!-- Content will be injected from translations.js -->
+                    </div>
+                </section>
+
                 <div data-i18n="project_6_detail">
                     <!-- Content will be injected from translations.js -->
                 </div>
@@ -220,15 +249,44 @@
                 <figcaption class="image-caption" data-i18n="project_6_img2_caption">Lightweight lifting steering wheel module for the main-track R2 robot</figcaption>
             </figure>
 
-            <figure class="project-module-figure">
-                <img src="images/robocon-2026-6.gif" onerror="this.onerror=null;this.src='https://via.placeholder.com/420x470'" alt="First-generation R2 active suspension chassis automatically traversing terrain" class="project-terrain-gif">
-                <figcaption class="image-caption" data-i18n="project_6_img4_caption">First-generation R2 active suspension chassis automatically traversing terrain</figcaption>
-            </figure>
+            <div class="project-media-stack">
+                <div class="project-image-item" style="max-width: 90%;">
+                    <img src="images/robocon2026-8.gif" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x450'" alt="Second-generation R2 robot traverses Meilin and grasps a KFS using its active-suspension swerve-drive chassis" style="width: 90%; margin: 0 auto; display: block;">
+                    <p class="image-caption" data-i18n="project_6_img4_caption">Second-generation R2 robot traverses Meilin and grasps a KFS using its active-suspension swerve-drive chassis</p>
+                </div>
+                <div class="project-image-item" style="max-width: 90%;">
+                    <img src="images/robocon2026-7.gif" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x450'" alt="Second-generation R2 robot autonomously enters Zone 3, picks up a KFS from the ground, and places it in the 3x3 grid" style="width: 90%; margin: 0 auto; display: block;">
+                    <p class="image-caption" data-i18n="project_6_img5_caption">Second-generation R2 robot autonomously enters Zone 3, picks up a KFS from the ground, and places it in the 3x3 grid</p>
+                </div>
+            </div>
 
             <div class="project-content">
                 <div data-i18n="project_6_detail_3">
                     <!-- Content will be injected from translations.js -->
                 </div>
+            </div>
+
+            <figure class="project-module-figure">
+                <img src="images/robocon2026-9.JPG" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x500'" alt="SUSTech ARES Team members, 2026 season" class="project-team-photo">
+                <figcaption class="image-caption" data-i18n="project_6_img6_caption">SUSTech ARES Team members, 2026 season</figcaption>
+            </figure>
+
+            <div class="project-links-row">
+                <a href="https://www.bilibili.com/video/BV1qrKK6cEDw/" target="_blank" rel="noopener noreferrer" class="btn-details" title="【Robocon2026】小组赛第一轮 南方科技大学 VS 广东工业大学2队">
+                    <i class="fas fa-play-circle"></i> <span data-i18n="project_6_match_video_1">比赛视频1</span>
+                </a>
+                <a href="https://www.bilibili.com/video/BV1qrKK6cEX4/" target="_blank" rel="noopener noreferrer" class="btn-details" title="【Robocon2026】小组赛第二轮 南方科技大学 VS 柳州工学院">
+                    <i class="fas fa-play-circle"></i> <span data-i18n="project_6_match_video_2">比赛视频2</span>
+                </a>
+                <a href="https://www.bilibili.com/video/BV1EzKK6aETS/" target="_blank" rel="noopener noreferrer" class="btn-details" title="【Robocon2026】小组赛第三轮 华中科技大学 VS 南方科技大学">
+                    <i class="fas fa-play-circle"></i> <span data-i18n="project_6_match_video_3">比赛视频3</span>
+                </a>
+                <a href="https://www.bilibili.com/video/BV1ix3b6MEWF/" target="_blank" rel="noopener noreferrer" class="btn-details" title="R2的赛场调试（使用Odin1）">
+                    <i class="fas fa-play-circle"></i> <span data-i18n="project_6_r2_debug_video">R2调试视频</span>
+                </a>
+                <a href="https://pan.baidu.com/s/1qAR5CCVPXEXeY3ie3QH8DQ?pwd=wf75" target="_blank" rel="noopener noreferrer" class="btn-details" title="南方科技大学ARES2026RC交换图纸（提取码：wf75）">
+                    <i class="fas fa-download"></i> <span data-i18n="project_open_source">开源图纸</span>
+                </a>
             </div>
 
         </div>

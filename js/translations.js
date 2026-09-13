@@ -31,8 +31,15 @@ const translations = {
         "project_view_details": "View Details",
         "back_to_projects": "Back",
         "project_open_source": "Open Source CAD",
+        "project_awards_title": "Project Awards",
         "project_6_title": "ROBOCON2026-Quadruped & Kung Fu Quest",
         "project_6_desc": "As the mechanical group leader of the SUSTech ARES team's quadruped track, designed the 12-DOF bionic quadruped robot for the competition, and also participated in the structural design of the main competition robot.",
+        "project_6_awards": `
+            <ul>
+                <li>The 25th National University Student ROBOCON “Kung Fu Quest” Robot Challenge: Main Competition — <strong>National Second Prize</strong>; “Chongwu Tanyou” Skills Competition — <strong>National Second Prize</strong>; “Jiugong Cangbao” Skills Competition — <strong>National Second Prize</strong>; Exchange Competition — <strong>National Second Prize</strong>.</li>
+                <li>The 25th National University Student ROBOCON Bionic Legged Robot Challenge: Obstacle Competition — <strong>National Third Prize</strong>.</li>
+            </ul>
+        `,
         "project_6_detail": `
             <p>The bionic quadruped track of the 2026 ROBOCON competition requires participating teams to design a quadruped robot capable of completing an obstacle course within a specified time.</p>
             <p>As the mechanical group leader of the SUSTech ARES team's quadruped track, I was primarily responsible for the complete mechanical structure design and iteration of the 12-DOF quadruped robot used for the competition. During the research and development process, I conducted multiple rounds of iterations on the robot's leg configuration and transmission system. Ultimately, a series leg configuration was adopted, and a four-bar linkage transmission mechanism with a reduction ratio of approximately 1.67 was designed for the knee joint.</p>
@@ -41,7 +48,13 @@ const translations = {
         "project_6_img1_caption": "Quadruped Robot's First Unprotected Stand-up",
         "project_6_img2_caption": "Lightweight lifting steering wheel module for the main-track R2 robot (about 660g without drive and slip ring, about 1080g including drive, slip ring, and lifting structure)",
         "project_6_img3_caption": "Quadruped robot climbs stairs using reinforcement learning policy",
-        "project_6_img4_caption": "First-generation R2 active suspension chassis automatically traversing terrain",
+        "project_6_img4_caption": "Second-generation R2 robot traverses Meilin and grasps a KFS using its active-suspension swerve-drive chassis",
+        "project_6_img5_caption": "Second-generation R2 robot autonomously enters Zone 3, picks up a KFS from the ground, and places it in the 3×3 grid",
+        "project_6_img6_caption": "SUSTech ARES Team members, 2026 season",
+        "project_6_match_video_1": "Match Video 1",
+        "project_6_match_video_2": "Match Video 2",
+        "project_6_match_video_3": "Match Video 3",
+        "project_6_r2_debug_video": "R2 Debugging Video",
         "project_6_detail_2": `
             <p>The 2026 ROBOCON "Kung Fu Quest" main track required robots to complete complex tasks under extremely high dynamic and collaborative standards within a time limit, including precise docking of weapon head poles, traversing the complex stepping terrain of the "Plum Blossom Poles" (Meilin), and cooperative peg-in-hole tasks in the "KFS" 3x3 grid using two robots.</p>
             <p>As a mechanical team member of the SUSTech ARES Team on the main track, I participated in the R&D and iteration of the key actuating mechanisms for the R2 robot. My main contributions are as follows:</p>
@@ -55,6 +68,13 @@ const translations = {
         `,
         "project_1_title": "ROBOCON2025-Robot Basketball",
         "project_1_desc": "As the technical consultant for the ECUST 'Wu Er' team, designed the steering wheel structure and shooting mechanism for the competition robot.",
+        "project_1_awards": `
+            <ul>
+                <li>2025 ROBOCON (Jiangyin), “Robot Basketball”: Main Competition — <strong>National Third Prize</strong>; Dribbling Competition — <strong>National Second Prize</strong>; Shooting Competition — <strong>National Third Prize</strong>.</li>
+                <li>2025 ROBOCON National Exchange Competition, “Robot Basketball”: <strong>National Second Prize</strong> and <strong>Best Technology Award</strong>.</li>
+                <li>2025 China College Students Mechanical Engineering Innovation and Creativity Competition, “Intelligent Basketball Training Platform”: <strong>National Second Prize</strong> and <strong>First Prize in the Yangtze River Delta Division</strong>.</li>
+            </ul>
+        `,
         "project_1_detail": `
             <p>The theme of the 2025 ROBOCON competition is "Robot Basketball", requiring participating teams to design robots capable of completing dribbling and shooting tasks within a specified time.</p>
             <p>As the technical consultant for the ECUST "Wu Er" team, I was primarily responsible for the mechanical structure design and guidance of the competition robots.</p>
@@ -70,7 +90,6 @@ const translations = {
                 <li><strong>Dribbling Mechanism:</strong> Developed two dribbling mechanisms: pneumatic grippers with Z-axis lifting and friction wheels. Subsequent testing at the competition venue revealed that the pneumatic gripper was less effective due to ground flatness and rebound issues.</li>
             </ul>
             <p>The two robots had clear divisions of labor: one could complete the full process from dribbling to shooting, while the other could quickly swap its upper structure and was equipped with the more powerful U8 steering wheels to fulfill the defensive tasks in the dribbling and competitive matches respectively.</p>
-            <p>At the 2025 ROBOCON (Jiangyin), the team won <strong> National 3rd Prize in the main competition, 2nd Prize in Dribbling, and 3rd Prize in Shooting</strong>. Previously, at the National Exchange Competition held at South China University of Technology (May 2025), we secured <strong> National 2nd Prize and the Best Technology Award</strong>. Subsequently, the project 'Intelligent Basketball Training Platform' (derived from one of the robots) won <strong>National 2nd Prize</strong> in the 2025 China College Students Mechanical Engineering Innovation and Creativity Competition</p>
         `,
         "project_1_img1_caption": "DM6220+M3508 Steering Wheel Module",
         "project_1_img2_caption": "M3508+U8 Lite Steering Wheel Module",
@@ -79,6 +98,12 @@ const translations = {
         "project_1_img5_caption": "Group photo of ECUST 'Wu Er' team members in 2025 season",
         "project_2_title": "ROBOCON2024-Harvest Day",
         "project_2_desc": "As the Vice Captain and Mechanical Group Leader of the ECUST 'Wu Er' team, designed the complete vehicle structure for the competition robot.",
+        "project_2_awards": `
+            <ul>
+                <li>2024 ROBOCON National Championship, “Harvest Day”: Main Competition — <strong>National Third Prize</strong>; Operation Skills Challenge — <strong>National Second Prize</strong>.</li>
+                <li>2024 China College Students Mechanical Engineering Innovation and Creativity Competition, “Autonomous Beverage Delivery Robot”: <strong>National Third Prize</strong> and <strong>First Prize in the Yangtze River Delta Division</strong>.</li>
+            </ul>
+        `,
         "project_2_detail": `
             <p>The theme of the 2024 ROBOCON competition was "Harvest Day." It required teams to design two robots capable of completing gripping, throwing, and transporting tasks within a limited time. Robot 1 (R1) was tasked with picking and placing seedlings in Zones 1 & 2, as well as gripping and passing grains. Robot 2 (R2) was required to fully autonomously grab specific grains in Zone 3 and deposit them into silos.</p>
             <p>As the <strong>Vice Captain and Mechanical Group Leader</strong> of the ECUST "Wu Er" team, I led the complete vehicle mechanical design of R1 and participated in the structural design of R2. I was also responsible for daily team management and operations, including organizing multiple mechanical training sessions during recruitment to enhance the team's overall technical proficiency and workflow efficiency.</p>
@@ -87,7 +112,6 @@ const translations = {
                 <li><strong>Chassis Structural Design:</strong> Developed two sets of Mecanum wheel chassis systems driven by DJI M3508 motors. One utilized off-the-shelf wheels directly driven by the motor shaft, offering a simple structure but subjecting the shaft system to significant <strong>bending moment loads</strong>. The other featured <strong>custom Mecanum wheels with an embedded design</strong> to enhance chassis compactness and the stable load-bearing capacity of the shaft system.</li>
                 <li><strong>Gripping & Transfer Mechanisms:</strong> Implemented a <strong>gantry-style robotic arm</strong> on R1 for the simultaneous picking and placing of multiple seedlings. Integrated a <strong>2-DOF robotic arm</strong> combined with a <strong>stored-energy ejection mechanism</strong> at the rear of R1 to transfer grains to Zone 3. On R2, deployed a <strong>4-DOF robotic arm</strong> equipped with a <strong>ducted fan</strong> to achieve vacuum suction and placement of grains.</li>
             </ul>
-            <p>The team secured <strong>National 3rd Prize in the Main Competition</strong> and <strong>National 2nd Prize in the Operation Skills Challenge</strong> at the 2024 ROBOCON National Championship. Subsequently, the "Autonomous Beverage Delivery Robot" project (based on the R1 platform) won <strong>National 3rd Prize</strong> in the 2024 China College Students Mechanical Engineering Innovation and Creativity Competition and <strong>1st Prize</strong> in the Yangtze River Delta Division.</p>
         `,
         "project_2_img1_caption": "R1 Robot in Competition",
         "project_2_img2_caption": "R2 Robot in Competition",
@@ -173,7 +197,14 @@ const translations = {
             </ul>
         </div>
         <p>The project completed the manufacturing and debugging of a complete second-generation prototype involving belt transmission, gear relay power distribution, and cleaning modules, verifying the rationality of the mechanical structure and the stability of the control system. A companion WeChat mini-program was also developed, realizing a complete loop of parking space reservation, charging status monitoring, and fee settlement.</p>
-        <p>The project won multiple national, provincial, and university-level awards, including the National Third Prize and Yangtze River Delta Region First Prize in the 2023 Chinese College Students Mechanical Engineering Innovation and Creativity Competition, and the First Prize in the 12th Shanghai College Students Mechanical Engineering Innovation Competition. In addition, the project was recognized by OPmobility (Plastic Omnium) and was invited to participate in "The Future Of Energy for Mobility" innovation challenge showcase hosted by OPmobility and SoScience in Paris, France, in September 2023.</p>
+        <p>The project was also recognized by OPmobility (Plastic Omnium) and was invited to participate in "The Future Of Energy for Mobility" innovation challenge showcase hosted by OPmobility and SoScience in Paris, France, in September 2023.</p>
+        `,
+        "project_5_awards": `
+            <ul>
+                <li>2023 China College Students Mechanical Engineering Innovation and Creativity Competition: <strong>National Third Prize</strong> and <strong>First Prize in the Yangtze River Delta Division</strong>.</li>
+                <li>12th Shanghai College Students Mechanical Engineering Innovation Competition: <strong>First Prize</strong>.</li>
+                <li>Multiple additional national, provincial, and university-level awards.</li>
+            </ul>
         `,
         "project_5_img1_caption": "Preliminary Data Analysis",
         "project_5_img2_caption": "Mechanical Structure Diagram",
@@ -193,6 +224,12 @@ const translations = {
         "timeline_ecust_enroll_date": "2021.9",
         "timeline_ecust_enroll_title": "Bachelor's Enrollment at ECUST",
         "timeline_ecust_enroll_desc": "Enrolled in the School of Mechanical and Power Engineering at East China University of Science and Technology (ECUST) for undergraduate studies, majoring in Mechanical Design, Manufacturing and Automation.",
+        "timeline_robocon_2026_national_date": "2026.7",
+        "timeline_robocon_2026_national_title": "2026 ROBOCON 'Kung Fu Quest' National Championship & Bionic Legged Robot Challenge",
+        "timeline_robocon_2026_national_desc": "Representing SUSTech, won <strong>National Second Prize</strong> in the 'Kung Fu Quest' Main Competition, <strong>National Second Prize</strong> in the 'Chongwu Tanyou' Skills Competition, <strong>National Second Prize</strong> in the 'Jiugong Cangbao' Skills Competition, and <strong>National Third Prize</strong> in the Bionic Legged Robot Obstacle Competition.",
+        "timeline_robocon_2026_exchange_date": "2026.5",
+        "timeline_robocon_2026_exchange_title": "2026 ROBOCON 'Kung Fu Quest' National Exchange Competition",
+        "timeline_robocon_2026_exchange_desc": "Representing SUSTech, won <strong>National Second Prize</strong> in the 'Kung Fu Quest' Exchange Competition.",
         "timeline_1_date": "2025.7",
         "timeline_1_title": "ROBOCON 2025 'Robot Basketball' National Championship",
         "timeline_1_desc": "Representing ECUST, won the National 3rd Prize in the Main Competition, 2nd Prize in Dribbling, and 3rd Prize in Shooting in the 'Robot Basketball' event. The participating robot subsequently won the National 2nd Prize and Regional 1st Prize in the 2025 China College Students Mechanical Engineering Innovation and Creativity Competition.",
@@ -239,7 +276,7 @@ const translations = {
         "download_cv": "下载 PDF",
         "intro_title": "个人介绍",
         "intro_text": `
-        <p>我目前是南方科技大学机械与能源工程系的硕士一年级研究生，导师是<a href="https://faculty.sustech.edu.cn/?tagid=zhengyj&go=2&lang=en" target="_blank">郑裕基副教授</a>。</p>
+        <p>我目前是南方科技大学机械与能源工程系的二年级研究生，导师是<a href="https://faculty.sustech.edu.cn/?tagid=zhengyj&go=2&lang=en" target="_blank">郑裕基副教授</a>。</p>
         <p>我本科毕业于华东理工大学机械与动力工程学院，获得机械设计制造及其自动化专业工学学士学位。</p>
         <p>在过去数年的参赛经历与项目实践中，我主要负责机械结构设计，具备较为扎实的机械系统建模与工程实现能力。同时，我也曾参与基于强化学习的智能控制与视觉感知相关项目，在算法层面具备一定的实践经验。</p>
         `,
@@ -248,8 +285,15 @@ const translations = {
         "project_view_details": "查看详情",
         "back_to_projects": "返回",
         "project_open_source": "开源图纸",
+        "project_awards_title": "项目获奖",
         "project_6_title": "ROBOCON2026-仿生足式&武林探秘",
         "project_6_desc": "作为南方科技大学ARES战队四足赛道的机械组组长，设计了用于参赛的12自由度四足机器人，同时也参与了主赛参赛机器人的结构设计。",
+        "project_6_awards": `
+            <ul>
+                <li>第二十五届全国大学生机器人大赛ROBOCON“武林探秘”机器人挑战赛：竞技赛<strong>全国二等奖</strong>、“崇武探幽”技能赛<strong>全国二等奖</strong>、“九宫藏宝”技能赛<strong>全国二等奖</strong>、交流赛<strong>全国二等奖</strong>。</li>
+                <li>第二十五届全国大学生机器人大赛ROBOCON仿生足式机器人挑战赛：障碍赛<strong>全国三等奖</strong>。</li>
+            </ul>
+        `,
         "project_6_detail": `
             <p>2026年的ROBOCON赛事的仿生足式赛道要求参赛队设计能够在规定时间内完成障碍赛的四足机器人。</p>
             <p>作为南方科技大学ARES战队四足赛道的机械负责人，我主要负责参赛12自由度四足机器人的全套机械结构设计与迭代工作。在研发过程中，我针对机器人的腿部构型与传动系统进行了多轮迭代，最终确定了串联腿构型，并在膝关节处设计了减速比约为1.67的四连杆传动机构。</p>
@@ -258,21 +302,34 @@ const translations = {
         "project_6_img1_caption": "四足机器人首次无保护起立",
         "project_6_img2_caption": "用于主赛 R2 机器人的轻量化升降小舵轮模组(不含电驱及滑环约 660g，含电驱滑环和升降结构约 1080g)",
         "project_6_img3_caption": "四足机器人使用强化学习策略上下台阶",
-        "project_6_img4_caption": "一代R2主动悬挂底盘自动跨越地形",
+        "project_6_img4_caption": "二代R2机器人通过主动悬挂舵轮底盘自动跨越梅林并抓取KFS",
+        "project_6_img5_caption": "二代R2机器人自动进入三区抓取地上的KFS并放置于九宫格中",
+        "project_6_img6_caption": "2026赛季南方科技大学ARES战队队员合影",
+        "project_6_match_video_1": "比赛视频1",
+        "project_6_match_video_2": "比赛视频2",
+        "project_6_match_video_3": "比赛视频3",
+        "project_6_r2_debug_video": "R2调试视频",
         "project_6_detail_2": `
             <p>2026年ROBOCON“武林探秘”主赛道要求机器人在极高的动态与协同标准下，限时完成武器头杆的精准对接、跨越“梅林”复杂阶梯地形，以及双车配合下的“KFS”九宫格抓放等复合任务。</p>
-            <p>作为南方科技大学ARES战队主赛机械组成员，我参与了R2机器人关键执行机构的研发与迭代，主要贡献如下：</p>
+            <p>作为南方科技大学ARES战队主赛机械组成员，我参与了 R2 机器人底盘、舵轮、机械臂及整机结构的研发与迭代，围绕轻量化、越障能力、抓取效率与机构可靠性等关键指标开展结构设计与方案优化，主要工作如下：</p>
             <ul>
-                <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对地形跨越能力的要求，设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单舵轮模组轮重量控制在700g左右。同时，为解决“梅林”区域地形跨越问题，参与开发了一型搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
-                <li><strong>四自由度机械臂设计：</strong> 负责一代R2机器人道具抓取机构的设计，以实现对武器头及“KFS”道具的抓取、对接等动作；为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。该设计在保障四自由度工作空间的同时，显著提升了高动态抓取作业时的响应速度与控制精度。</li>
-                <li><strong>二代R2机器人整机结构研发：</strong> 负责二代R2机器人的整机结构设计，在一代机器人的基础上针对主赛道的任务需求与赛场环境进行了针对性的优化迭代，沿用主动悬挂舵轮底盘的布置，更换使用三自由度机械臂以简化解算复杂度与提高抓取KFS效率。</li>
+                <li><strong>底盘与轻量化舵轮设计：</strong> 针对赛场复杂地形对地形跨越能力的要求，设计了一款专用于R2机器人的小型轻量化舵轮，通过紧凑的结构布局将单舵轮模组轮重量控制在700g左右，同时选用高功率密度、小直径无刷电机及配套轮毂，使单轮最大推力达到约 40 N。同时，为解决“梅林”区域地形跨越问题，参与开发了一型搭载主动升降悬挂的底盘架构，大幅提升了机器人的越障能力与行进姿态稳定性。</li>
+                <li><strong>四自由度机械臂设计：</strong> 负责一代R2机器人道具抓取机构的设计，通过单一机械臂共用末端实现对武器头及“KFS”道具的抓取、对接等动作；为有效降低机械臂在高速运动时的末端惯量并优化整机重心，采用了电机下置配合四连杆传动的构型方案。在保证四自由度工作空间与任务可达性的同时，提升了机械臂在高速抓取与对接过程中的动态响应能力，并为后续运动控制提供了更稳定的机械基础。</li>
+                <li><strong>二代R2机器人整机结构研发：</strong> 负责二代R2机器人的整机结构设计，在一代R2机器人的基础上针对主赛道的任务需求与赛场环境进行了针对性的优化迭代，沿用可全向上下台阶的主动悬挂舵轮底盘的布置，前端更换使用三自由度机械臂，以降低运动学解算及控制复杂度，并提升“KFS”抓取任务的执行效率；针对武器头抓取与对接任务，设计了横向同步带移动机构，并分别开发可旋转折叠的气缸夹爪与电缸夹爪两种末端方案；同时结合横移电机电流反馈判断对接状态，实现对接成功检测及机构自动脱离</li>
             </ul>
         `,
         "project_6_detail_3": `
-            <p>此外，还参与了 25-26 赛季队伍的整体管理与运营工作，参与组织招新宣讲、培训与招新面试等运营工作，以及寒假年会期间多次与其他学校队伍的技术交流活动。</p>
+            <p>此外，还参与了 25-26 赛季队伍的整体管理与运营工作，参与组织招新宣讲、培训与招新面试等运营工作，以及寒假年会期间、备赛与比赛期间多次与国内外众多高校队伍的技术交流活动。</p>
         `,
         "project_1_title": "ROBOCON2025-飞身上篮",
         "project_1_desc": "作为华东理工大学“无贰”战队的技术顾问，设计了用于参赛机器人的舵轮结构与投篮机构。",
+        "project_1_awards": `
+            <ul>
+                <li>2025年ROBOCON江阴赛区“飞身上篮”赛项：竞技赛<strong>全国三等奖</strong>、运球赛<strong>全国二等奖</strong>、投篮赛<strong>全国三等奖</strong>。</li>
+                <li>2025年ROBOCON全国交流赛“飞身上篮”赛项：交流赛<strong>全国二等奖</strong>与<strong>最佳技术奖</strong>。</li>
+                <li>2025年中国大学生机械工程创新创意大赛“青出于篮——智能化篮球训练平台”项目：<strong>全国二等奖</strong>与<strong>长三角赛区一等奖</strong>。</li>
+            </ul>
+        `,
         "project_1_detail": `
             <p>2025年的ROBOCON赛事的主题为“飞身上篮”，要求参赛队设计能够在规定时间内完成运球与投篮任务的机器人。</p>
             <p>作为华东理工大学“无贰”战队的技术顾问，我主要负责参赛机器人的机械结构设计与指导工作。</p>
@@ -288,7 +345,6 @@ const translations = {
                 <li><strong>运球机构：</strong>开发了配合Z轴升降的气动夹爪与摩擦轮两套运球机构。后续在赛场时的测试发现，由于场地地面平整度与回弹的原因，气缸夹爪的效果并不理想。</li>
             </ul>
             <p>两台机器人有着较为明确的分工：一台可完整运球到投篮的全流程，另一台则可快速更换上部结构，并配合动力更强的U8舵轮，以分别完成运球赛与竞技赛中防守的任务需求。</p>
-            <p>团队在2025年ROBOCON江阴赛区中获“飞身上篮”赛项<strong>竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖</strong>。此前参加了2025年5月于华南理工大学举办的2025年ROBOCON全国交流赛并获得“飞身上篮”赛项交流赛<strong>全国二等奖与最佳技术奖</strong>。此后以其中一台机器人为主体的“青出于篮——智能化篮球训练平台”项目获得2025年中国大学生机械工程创新创意大赛<strong>全国二等奖与长三角赛区一等奖</strong>。</p>
         `,
         "project_1_img1_caption": "DM6220+M3508舵轮轮组",
         "project_1_img2_caption": "M3508+U8 Lite舵轮轮组",
@@ -297,6 +353,12 @@ const translations = {
         "project_1_img5_caption": "2025赛季华东理工大学”无贰“战队队员合影",
         "project_2_title": "ROBOCON2024-颗粒归仓",
         "project_2_desc": "作为华东理工大学“无贰”战队的副队长与机械组组长，设计了一台参赛机器人的整车结构。",
+        "project_2_awards": `
+            <ul>
+                <li>2024年ROBOCON全国赛“颗粒归仓”赛项：竞技赛<strong>全国三等奖</strong>、操作技能挑战赛<strong>全国二等奖</strong>。</li>
+                <li>2024年中国大学生机械工程创新创意大赛“自主饮料配送机器人”项目：<strong>全国三等奖</strong>与<strong>长三角赛区一等奖</strong>。</li>
+            </ul>
+        `,
         "project_2_detail": `
             <p>2024年的ROBOCON赛事的主题为“颗粒归仓”，要求参赛队设计两台能够在规定时间内完成抓取、投掷与搬运任务的机器人，其中一台（R1）要求能在一区与二区完成夹取放置秧苗、夹取并传递谷物的任务；另一台（R2）要求能在三区全自动地抓取特定的谷物并放置入筒仓之中。</p>
             <p>作为华东理工大学“无贰”战队的副队长与机械组组长，我主要负责R1的整车机械结构设计工作，同时也参与了R2的结构设计工作。此外还负责战队的日常管理与运营工作，包括在招新期间组织多次机械组培训，提高团队整体的技术水平和工作效率。</p>
@@ -305,7 +367,6 @@ const translations = {
                 <li><strong>底盘结构设计：</strong>设计了两套使用DJI M3508电机驱动的麦轮底盘，其中一套使用成品麦轮并通过M3508的电机轴输出，结构简单但对电机轴系有较大的弯矩载荷；另一套则使用内嵌结构设计的定制麦轮以提升底盘的紧凑性与轴系的稳定承载能力。</li>
                 <li><strong>夹取与传递机构：</strong>在R1上使用了龙门架构型的机械臂完成多个秧苗的同时夹取与放置，在R1后部采用了一组双自由度机械臂配合蓄能弹射机构用于将谷物传递至三区。在R2上使用了一个四自由度机械臂并配合涵道风扇完成对谷物的吸取与放置。</li>
             </ul>
-            <p>团队在2024年ROBOCON全国赛中获“颗粒归仓”赛项<strong>竞技赛全国三等奖与操作技能挑战赛全国二等奖</strong>。此后以R1机器人为主体的“自主饮料配送机器人”项目获得2024年中国大学生机械工程创新创意大赛<strong>全国三等奖与长三角赛区一等奖</strong>。</p>
         `,
         "project_2_img1_caption": "比赛中的R1机器人",
         "project_2_img2_caption": "比赛中的R2机器人",
@@ -390,7 +451,15 @@ const translations = {
             </ul>
         </div>
         <p>项目完成了包含皮带传动、齿轮继电配电、清洁模块在内的完整二代样机制造与调试，验证了机械结构的合理性与控制系统的稳定性。同时开发了配套的微信小程序，实现了车位预约、充电状态监控及费用结算的完整闭环。</p>
-        <p>项目获得2023年中国大学生机械工程创新创意大赛全国三等奖与长三角赛区一等奖、第十二届上海市大学生机械工程创新大赛一等奖等多想国家级、省部级与校级奖项。此外，项目还获得彼欧集团认可，受邀参加了2023年9月在法国巴黎由彼欧集团（OPmobility）与SoScience举办的“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛展示。</p>
+        <p>此外，项目还获得彼欧集团认可，受邀参加了2023年9月在法国巴黎由彼欧集团（OPmobility）与SoScience举办的“交通出行能源的未来(The Future Of Energy for Mobility)”创意大赛展示。</p>
+        `,
+
+        "project_5_awards": `
+            <ul>
+                <li>2023年中国大学生机械工程创新创意大赛：<strong>全国三等奖</strong>与<strong>长三角赛区一等奖</strong>。</li>
+                <li>第十二届上海市大学生机械工程创新大赛：<strong>一等奖</strong>。</li>
+                <li>另获多项国家级、省部级与校级奖项。</li>
+            </ul>
         `,
 
         "project_5_img1_caption": "项目前期数据分析",
@@ -411,6 +480,12 @@ const translations = {
         "timeline_ecust_enroll_date": "2021.9",
         "timeline_ecust_enroll_title": "华东理工大学本科入学",
         "timeline_ecust_enroll_desc": "进入华东理工大学机械与动力工程学院开始本科学习，专业为机械设计制造及其自动化。",
+        "timeline_robocon_2026_national_date": "2026.7",
+        "timeline_robocon_2026_national_title": "2026年全国大学生机器人大赛ROBOCON“武林探秘”全国赛、仿生足式挑战赛",
+        "timeline_robocon_2026_national_desc": "代表南方科技大学获“武林探秘”赛项竞技赛<strong>全国二等奖</strong>、“崇武探幽”技能赛<strong>全国二等奖</strong>、“九宫藏宝”技能赛<strong>全国二等奖</strong>，仿生足式障碍赛<strong>全国三等奖</strong>。",
+        "timeline_robocon_2026_exchange_date": "2026.5",
+        "timeline_robocon_2026_exchange_title": "2026年全国大学生机器人大赛ROBOCON“武林探秘”全国交流赛",
+        "timeline_robocon_2026_exchange_desc": "代表南方科技大学获“武林探秘”赛项交流赛<strong>全国二等奖</strong>。",
         "timeline_1_date": "2025.7",
         "timeline_1_title": "2025年全国大学生机器人大赛ROBOCON“飞身上篮”全国赛",
         "timeline_1_desc": "代表华东理工大学获“飞身上篮”赛项竞技赛全国三等奖，运球赛全国二等奖与投篮赛全国三等奖，参赛机器人后续还获2025年中国大学生机械工程创新创意大赛全国二等奖与长三角赛区一等奖。",
